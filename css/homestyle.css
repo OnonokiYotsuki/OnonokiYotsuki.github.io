@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*设置标题背景图*/
+.titleimg {
+  background-image: url("../img/head.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  transition: 0.5s ease 0s;
+  animation: load 0.5s;
+}
+.titleimg .title {
+  padding: 400px;
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgba(49, 70, 87, 0.9);
+}
+/*设置导航卡*/
+.pt {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 300px;
+  float: left;
+  margin: 200px 0px 0px 150px;
+  background: rgba(219, 235, 241, 0.8);
+  box-shadow: 0 0 15px rgb(59, 73, 95);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+.pt:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.part1 .img {
+  background-image: url("../img/homepic1.png");
+}
+.part2 .img {
+  background-image: url("../img/homepic2.png");
+}
+.part3 .img {
+  background-image: url("../img/homepic3.png");
+}
+.part4 .img {
+  background-image: url("../img/homepic4.png");
+}
+.pt .img {
+  height: 230px;
+  width: 300px;
+  background-size: cover;
+  background-position: 0px -30px;
+  transition: all 0.5s ease 0s;
+  opacity: 0.8;
+}
+.pt .img:hover {
+  transform: scale(1.1);
+}
+.pt .txt {
+  height: 310px;
+  width: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+.pt .txt h1 {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(28, 44, 68);
+  height: 30px;
+  line-height: 30px;
+}
+.pt .txt p {
+  margin-top: -2px;
+  word-wrap: break-word;
+  color: rgb(114, 182, 202);
+}
+@keyframes load {
+  0% {
+    background-position-y: 50px;
+    opacity: 0;
+  }
+  100% {
+    background-position-y: 0px;
+    opacity: 1;
+  }
+}
