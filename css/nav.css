@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 nav {
   position: fixed;
   display: flex;
@@ -88,7 +87,26 @@ a:nth-child(6):hover ~ .navanim {
     display: flex;
     justify-items: center;
   }
-  nav a {
+  nav .main-menu {
+    /* display: none; */
+    flex-direction: column;
+  }
+  #menu-btn-check {
+    /* display: none; */
+  }
+  #menu-btn-check:checked + label {
+    background-color: blue;
+  }
+  label {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: absolute;
+    left: 350px;
+  }
+}
+@media (min-width: 500px) {
+  #menu-btn-check {
     display: none;
   }
 }
