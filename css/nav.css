@@ -66,3 +66,8 @@ a:nth-child(6):hover ~ .navanim {
   width: 120px;
   left: 1130px;
 }
+nav .join,
+a:nth-child(7):hover ~ .navanim {
+  width: 120px;
+  left: 1250px;
+}
