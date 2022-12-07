@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 nav {
   position: fixed;
   display: flex;
@@ -17,13 +18,22 @@ nav .navtitle {
   padding-left: 50px;
   padding-right: 350px;
   font-weight: bolder;
+  display: flex;
+  align-items: flex-end;
+}
+nav .navtitle div {
+  margin-bottom: 10px;
 }
 nav .navtitle strong {
   font-size: 50px;
   font-weight: bold;
 }
-nav a {
-  display: block;
+.main-menu {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+nav .main-menu a {
   justify-content: center;
   text-decoration: none;
   width: 120px;
@@ -33,12 +43,12 @@ nav a {
   transition: 0.5s;
   z-index: 1;
 }
-nav .navanim {
+nav .main-menu .navanim {
   width: 120px;
   background-color: rgb(155, 200, 240);
   border-radius: 10px;
   transition: all 0.5s ease 0s;
-  height: inherit;
+  height: 66px;
   position: absolute;
 }
 nav .home,
@@ -47,26 +57,38 @@ a:nth-child(2):hover ~ .navanim {
   left: 650px;
 }
 nav .about,
-a:nth-child(3):hover ~ .navanim {
+a:nth-child(2):hover ~ .navanim {
   width: 120px;
   left: 770px;
 }
 nav .blog,
-a:nth-child(4):hover ~ .navanim {
+a:nth-child(3):hover ~ .navanim {
   width: 120px;
   left: 890px;
 }
 nav .album,
-a:nth-child(5):hover ~ .navanim {
+a:nth-child(4):hover ~ .navanim {
   width: 120px;
   left: 1010px;
 }
 nav .join,
-a:nth-child(6):hover ~ .navanim {
+a:nth-child(5):hover ~ .navanim {
   width: 120px;
   left: 1130px;
 }
-a:nth-child(7):hover ~ .navanim {
+a:nth-child(6):hover ~ .navanim {
   width: 120px;
   left: 1250px;
+}
+@media (max-width: 500px) {
+  nav .navtitle {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bolder;
+    display: flex;
+    justify-items: center;
+  }
+  nav a {
+    display: none;
+  }
 }
