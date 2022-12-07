@@ -32,6 +32,9 @@ nav .navtitle strong {
   height: inherit;
   align-items: center;
 }
+.menu-btn-check {
+  display: none;
+}
 nav .main-menu a {
   justify-content: center;
   text-decoration: none;
@@ -91,7 +94,7 @@ a:nth-child(6):hover ~ .navanim {
     justify-items: center;
   }
   nav .main-menu {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     position: absolute;
     right: 0;
@@ -100,17 +103,16 @@ a:nth-child(6):hover ~ .navanim {
     height: auto;
   }
   #menu-btn-check {
-    /* display: none; */
+    display: none;
   }
-  #menu-btn-check:checked + label {
-    background-color: blue;
+  #menu-btn-check:checked + label .main-menu {
+    border: 3px solid #495f8c;
+    display: flex;
   }
-  label {
-    height: 30px;
-    width: 30px;
-    background-color: red;
+  .menu-btn-check {
     position: absolute;
     left: 350px;
+    display: block;
   }
 }
 @media (min-width: 500px) {
