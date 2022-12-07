@@ -80,6 +80,9 @@ a:nth-child(6):hover ~ .navanim {
   left: 1250px;
 }
 @media (max-width: 500px) {
+  nav {
+    overflow: visible;
+  }
   nav .navtitle {
     padding-left: 0;
     padding-right: 0;
@@ -90,6 +93,11 @@ a:nth-child(6):hover ~ .navanim {
   nav .main-menu {
     /* display: none; */
     flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    border: 3px solid red;
+    height: auto;
   }
   #menu-btn-check {
     /* display: none; */
