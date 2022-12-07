@@ -51,7 +51,7 @@ nav .main-menu .navanim {
   position: absolute;
 }
 nav .home,
-a:nth-child(2):hover ~ .navanim {
+a:nth-child(1):hover ~ .navanim {
   width: 120px;
   left: 650px;
 }
