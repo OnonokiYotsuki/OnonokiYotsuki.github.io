@@ -25,6 +25,7 @@
 
         function targetRandomKey() {
             const key = document.getElementById(getRandomKey());
+            console.log(document.getElementById(getRandomKey()));
             key.classList.add("selected");
             let start = Date.now()
         }
@@ -52,7 +53,8 @@
             }
         })
 
-        targetRandomKey();</script>
+        targetRandomKey();
+    </script>
     <style>
         * {
             margin: 0;
@@ -284,7 +286,7 @@
 </head>
 
 <body>
-    <h1 class="title">Eyes on the screen</h1>
+    <h1 class="title"><a href="https://codepen.io/evilpaper/pen/dyyZjLQ">Eyes on the screen</a> </h1>
     <div class="keyboard">
         <ul class="row row-0">
             <li class="pinky" id="esc">ESC</li>
