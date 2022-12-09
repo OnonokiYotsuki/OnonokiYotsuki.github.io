@@ -77,6 +77,12 @@
             left: 202%;
         }
 
+        .slide:nth-of-type(4) {
+            background-color: #f2e205;
+            background-image: url("img/test/1.png");
+            left: 303%;
+        }
+
         .control-label {
             position: absolute;
             width: 100%;
@@ -128,8 +134,9 @@
             /* 点击轮播 */
             $('button').click(function () {
                 if ($(this).attr('id') == 'forward') {
-
-                    moveIt(1, 1);
+                    if (which == 3) {
+                        moveIt(2, 1);
+                    } else { moveIt(1, 1); }
                     clearInterval(time); timer();
                 }
                 if ($(this).attr('id') == 'back') {
@@ -158,7 +165,7 @@
                     switch (a) {
                         case 1:
                             which++;
-                            if (which == 4) { which = 1 }
+                            if (which == 5) { which = 1 }
                             break;
                         case 2:
                             which--;
@@ -175,15 +182,28 @@
                         $('.slide').css('transform', 'translateX(0%)');
                         $('#l1').css('background-color', '#333');
                         break;
-                    case 2:
+                    case 2: $('.slide').css('transition', '2s');
                         $('.slide').css('transform', 'translateX(-101%)'); $('#l2').css('background-color', '#333');
                         break;
                     case 3:
                         $('.slide').css('transform', 'translateX(-202%)'); $('#l3').css('background-color', '#333');
                         break;
+                    case 4:
+                        $('.slide').css('transform', 'translateX(-303%)'); $('#l1').css('background-color', '#333');
+                        setTimeout(function () {
+                            $('.slide').css('transition', '0s');
+                            $('.slide').css('transform', 'translateX(0%)')
+                        }, 2000);
+                        $('.slide').css('transition', '2s');
+                        break;
                     default:
                         break;
                 }
+            }
+            /* 重置卡片 */
+            function reset() {
+
+
             }
             /* 计时轮播 */
             let time;
@@ -192,7 +212,7 @@
                 time = setInterval(() => {
                     moveIt(1, 1);
                     console.log('go');
-                }, 4000)
+                }, 3000)
             }
         })
     </script>
@@ -208,6 +228,9 @@
         </li>
         <li class="slide">
             <div class="slideD">3</div>
+        </li>
+        <li class="slide">
+            <div class="slideD">1</div>
         </li>
         <div class="control-label">
             <label id="l1"></label>
