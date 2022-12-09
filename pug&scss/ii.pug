@@ -1,14 +1,211 @@
-header
-  a.brand(href="https://csstoggles.github.io/", target="_blank") CSS Toggle
-  a.nav(href="https://github.com/vineethtrv/css-toggle" , target="_blank")
-  
--for(var i = 1; i < 112; i++)
-  section(id="model-" + i) 
-    .card
-      .toggle
-        input(type="checkbox" id="check-"+ i)
-        label(for="check-"+ i)
-      
-// To view the implimention vist https://csstoggles.github.io/
+- let data = [
+- 	{ name: 'color-mix()', type: 'value', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix' }, 
+- 	{ name: 'mask-mode', type: 'property', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/mask-mode' }, 
+- 	{ name: ':has()', type: 'selector', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/:has' }
+- ];
+- let n = data.length;
+
+p A lot of my demos rely on features that I find useful, but may not be well supported across browsers. While I usually add info about support in Pen descriptions and sometimes even in titles or comments, this has a number of disadvantages.
+p One, something like "only works in X browser" in the description can quickly get outdated. I'm pretty sure I still have such bits of outdated info in lots of Pen descriptions. If you come across any of them, I'd really appreciate it if you could leave a comment telling me to update it.
+p Two, people don't read descriptions (and this got worse since CodePen have removed the ability to view descriptions on hover in the grid view) and they're even less likely to read code comments, Pen titles get truncated on mobile...
+p So lately I've started adding these little support info boxes that are displayed on not based on the result of testing for support in the CSS via 
+	code: a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/@supports' target='_blank') @supports
+	|  (for properties/ values or for selectors). Here's an 
+	a(href='https://codepen.io/thebabydino/full/qBKobME' target='_blank') example
+	|  of a demo where I did this.
+p You can also see an example of some infoboxes below.
+
+- for(let i = 0; i < n; i++)
+	- let c = data[i], re = /\(|\)|\:/gi;
+	.box(data-feat=`${c.type}--${c.name.replace(re, '')}` data-test='1')
+		strong.label Info
+		| Yay, your browser supports the 
+		code: a(href=c.link target='_blank') #{c.name}
+		|  #{c.type}! 🥳🎉
+	.box(data-feat=`${c.type}--${c.name.replace(re, '')}`)
+		strong.label Info
+		| Sorry, your browser doesn't support the 
+		code: a(href=c.link target='_blank') #{c.name}
+		|  #{c.type}. 😿
+
+p What info boxes are shown for you here depends on your browser and, if you're looking at this demo while it's still fresh (I've made it in mid December 2022), on what flags you have enabled in your browser.
+p For example, at the time of writing, Chromium browsers only support 
+	code color-mix()
+	|  from version 110+ and with the 
+	strong Experimental Web Platform features
+	|  flag enabled in 
+	code chrome://flags
+	| .
+p The code used to do this can be seen below. If the support test is passed, then the info box with a value of 
+	code 1
+	|  for the 
+	code data-test
+	|  attribute are shown. Otherwise it's the other one (the one with the "sorry, no support" message).
+
+pre(data-lang='SCSS')
+	span.token--line
+		span.token--sel: span.token--rcls .box
+		|  
+		span.token--punc {
+	span.token--set
+		span.token--line
+			span.token--sel
+				span.token--oper &
+				span.token--punc [
+				span.token--attr data-test
+				span.token--oper =
+				span.token--val: span.token--str '1'
+				span.token--punc ]
+			|  
+			span.token--punc {
+			|  
+			span.token--prop display
+			span.token--punc :
+			|  
+			span.token--val.token--keyw none
+			|  
+			span.token--punc }
+		br
+		span.token--line
+			span.token--cond @supports
+			|  
+			span.token--punc (
+			span.token--prop background
+			span.token--punc :
+			|  
+			span.token--val
+				span.token--func color-mix
+				span.token--punc (
+				span.token--args
+					span.token--arg: span.token--keyw in lch
+					span.token--punc ,
+					|  
+					span.token--arg: span.token--col.token--keyw red
+					span.token--punc ,
+					|  
+					span.token--arg: span.token--col.token--keyw tan
+				span.token--punc )
+			span.token--punc )
+			|  
+			span.token--punc {
+		span.token--set
+			span.token--line
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw none
+				span.token--punc ;
+			br
+			span.token--line
+				span.token--sel
+					span.token--oper &
+					span.token--punc [
+					span.token--attr data-test
+					span.token--oper =
+					span.token--val: span.token--str '1'
+					span.token--punc ]
+				|  
+				span.token--punc {
+				|  
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw block
+				|  
+				span.token--punc }
+		span.token--line: span.token--punc }
+		br
+		span.token--line
+			span.token--cond @supports
+			|  
+			span.token--punc (
+			span.token--prop mask-mode
+			span.token--punc :
+			|  
+			span.token--val.token--keyw luminance
+			span.token--punc )
+			|  
+			span.token--punc {
+		span.token--set
+			span.token--line
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw none
+				span.token--punc ;
+			br
+			span.token--line
+				span.token--sel
+					span.token--oper &
+					span.token--punc [
+					span.token--attr data-test
+					span.token--oper =
+					span.token--val: span.token--str '1'
+					span.token--punc ]
+				|  
+				span.token--punc {
+				|  
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw block
+				|  
+				span.token--punc }
+		span.token--line: span.token--punc }
+		br
+		span.token--line
+			span.token--cond @supports
+			|  
+			span.token--cond selector
+			span.token--punc (
+			span.token--arg.token--sel
+				span.token--pcls
+					span.token--name :has
+					span.token--punc (
+					span.token--arg: span.token--elem a
+					span.token--punc )
+			span.token--punc )
+			|  
+			span.token--punc {
+		span.token--set
+			span.token--line
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw none
+				span.token--punc ;
+			br
+			span.token--line
+				span.token--sel
+					span.token--oper &
+					span.token--punc [
+					span.token--attr data-test
+					span.token--oper =
+					span.token--val: span.token--str '1'
+					span.token--punc ]
+				|  
+				span.token--punc {
+				|  
+				span.token--prop display
+				span.token--punc :
+				|  
+				span.token--val.token--keyw block
+				|  
+				span.token--punc }
+		span.token--line: span.token--punc }
+	span.token--line: span.token--punc }
+
 footer
-  a(href="https://csstoggles.github.io/" target="_blank") Visit CSS Toggle 
+	p Got any questions about this? Found any problems with it?
+		br
+		| You can drop a comment here or ping me on 
+		a(href='https://mastodon.social/@anatudor' target='_blank' data-ico='🦣') Mastodon
+		|  
+		|  or on 
+		a(href='https://twitter.com/anatudor' target='_blank' data-ico='🐦') Twitter
+		| .
+	p And if you like the Maths and Physics infused CSS, canvas and SVG work that I've been putting out for over a decade, you can support it by being a cool cat and becoming a patron on 
+		a(href='https://www.patreon.com/anatudor' target='_blank') Patreon
+		|  or with a one time donation on 
+		a(href='https://ko-fi.com/anatudor' target='_blank') Ko-fi
+		| . Or at least by sharing this to show the world what can be done with CSS these days... because it's pretty damn cool!
