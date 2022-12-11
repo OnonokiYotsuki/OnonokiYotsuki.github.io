@@ -8,7 +8,7 @@
 p A lot of my demos rely on features that I find useful, but may not be well supported across browsers. While I usually add info about support in Pen descriptions and sometimes even in titles or comments, this has a number of disadvantages.
 p One, something like "only works in X browser" in the description can quickly get outdated. I'm pretty sure I still have such bits of outdated info in lots of Pen descriptions. If you come across any of them, I'd really appreciate it if you could leave a comment telling me to update it.
 p Two, people don't read descriptions (and this got worse since CodePen have removed the ability to view descriptions on hover in the grid view) and they're even less likely to read code comments, Pen titles get truncated on mobile...
-p So lately I've started adding these little support info boxes that are displayed on not based on the result of testing for support in the CSS via 
+p So lately I've started adding these little support info boxes that are displayed or not based on the result of testing for support in the CSS via 
 	code: a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/@supports' target='_blank') @supports
 	|  (for properties/ values or for selectors). Here's an 
 	a(href='https://codepen.io/thebabydino/full/qBKobME' target='_blank') example
@@ -90,29 +90,41 @@ pre(data-lang='SCSS')
 			span.token--punc {
 		span.token--set
 			span.token--line
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw none
-				span.token--punc ;
-			br
-			span.token--line
 				span.token--sel
 					span.token--oper &
 					span.token--punc [
-					span.token--attr data-test
+					span.token--attr data-feat
 					span.token--oper =
-					span.token--val: span.token--str '1'
+					span.token--val: span.token--str 'value--color-mix'
 					span.token--punc ]
 				|  
 				span.token--punc {
-				|  
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw block
-				|  
-				span.token--punc }
+			span.token--set
+				span.token--line
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw none
+					span.token--punc ;
+				br
+				span.token--line
+					span.token--sel
+						span.token--oper &
+						span.token--punc [
+						span.token--attr data-test
+						span.token--oper =
+						span.token--val: span.token--str '1'
+						span.token--punc ]
+					|  
+					span.token--punc {
+					|  
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw block
+					|  
+					span.token--punc }
+			span.token--line: span.token--punc }
 		span.token--line: span.token--punc }
 		br
 		span.token--line
@@ -128,29 +140,41 @@ pre(data-lang='SCSS')
 			span.token--punc {
 		span.token--set
 			span.token--line
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw none
-				span.token--punc ;
-			br
-			span.token--line
 				span.token--sel
 					span.token--oper &
 					span.token--punc [
-					span.token--attr data-test
+					span.token--attr data-feat
 					span.token--oper =
-					span.token--val: span.token--str '1'
+					span.token--val: span.token--str 'property--mask-mode'
 					span.token--punc ]
 				|  
 				span.token--punc {
-				|  
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw block
-				|  
-				span.token--punc }
+			span.token--set
+				span.token--line
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw none
+					span.token--punc ;
+				br
+				span.token--line
+					span.token--sel
+						span.token--oper &
+						span.token--punc [
+						span.token--attr data-test
+						span.token--oper =
+						span.token--val: span.token--str '1'
+						span.token--punc ]
+					|  
+					span.token--punc {
+					|  
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw block
+					|  
+					span.token--punc }
+			span.token--line: span.token--punc }
 		span.token--line: span.token--punc }
 		br
 		span.token--line
@@ -169,29 +193,41 @@ pre(data-lang='SCSS')
 			span.token--punc {
 		span.token--set
 			span.token--line
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw none
-				span.token--punc ;
-			br
-			span.token--line
 				span.token--sel
 					span.token--oper &
 					span.token--punc [
-					span.token--attr data-test
+					span.token--attr data-feat
 					span.token--oper =
-					span.token--val: span.token--str '1'
+					span.token--val: span.token--str 'selector--has'
 					span.token--punc ]
 				|  
 				span.token--punc {
-				|  
-				span.token--prop display
-				span.token--punc :
-				|  
-				span.token--val.token--keyw block
-				|  
-				span.token--punc }
+			span.token--set
+				span.token--line
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw none
+					span.token--punc ;
+				br
+				span.token--line
+					span.token--sel
+						span.token--oper &
+						span.token--punc [
+						span.token--attr data-test
+						span.token--oper =
+						span.token--val: span.token--str '1'
+						span.token--punc ]
+					|  
+					span.token--punc {
+					|  
+					span.token--prop display
+					span.token--punc :
+					|  
+					span.token--val.token--keyw block
+					|  
+					span.token--punc }
+			span.token--line: span.token--punc }
 		span.token--line: span.token--punc }
 	span.token--line: span.token--punc }
 
@@ -209,3 +245,5 @@ footer
 		|  or with a one time donation on 
 		a(href='https://ko-fi.com/anatudor' target='_blank') Ko-fi
 		| . Or at least by sharing this to show the world what can be done with CSS these days... because it's pretty damn cool!
+
+//.sticker
