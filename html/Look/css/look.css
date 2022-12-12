@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  width: 1200px;
+  margin-top: 30px;
+}
+.main-content {
+  background-color: aquamarine;
+  width: 800px;
+}
+.main-content .card {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .card-title {
+  color: rgb(255, 255, 255);
+  position: static;
+  opacity: 0.8;
+  background: rgb(30, 199, 230);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 5px;
+}
+.main-content .card-tag {
+  display: flex;
+}
+.main-content .card-tag i {
+  display: flex;
+  background-color: rgba(10, 10, 0, 0.7);
+  padding-right: 4px;
+  border-radius: 6px;
+  color: #fff;
+  margin-right: 4px;
+}
+.main-content .tag-date img {
+  content: url("../img/calendar-minus.svg");
+  stroke: red;
+}
+.main-content .info {
+  height: 300px;
+}
+.main-content .info img {
+  background: url("../img/宿星Girlfriend3.jpg");
+}
+.right-info {
+  background-color: blanchedalmond;
+  width: 400px;
+}

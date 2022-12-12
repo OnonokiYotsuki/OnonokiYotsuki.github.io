@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*设置body*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/background2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*设置滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 105, 136, 0.8);
+}
+::-webkit-scrollbar-track {
+  background: rgb(194, 213, 241);
+}
+/*设置页脚*/
+.foot {
+  bottom: 0px;
+  margin-top: 300px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: rgb(38, 107, 197);
+  opacity: 0.8;
+}
+.foot p {
+  line-height: 10px;
+}
