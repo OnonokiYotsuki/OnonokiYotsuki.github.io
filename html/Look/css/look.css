@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .container {
   background-color: red;
   position: relative;
@@ -15,7 +16,7 @@
 }
 .main-content {
   background-color: aquamarine;
-  width: 800px;
+  width: 66.6666%;
 }
 .main-content .card {
   background-color: wheat;
@@ -56,5 +57,20 @@
 }
 .right-info {
   background-color: blanchedalmond;
-  width: 400px;
+  width: 33.3333%;
+}
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    max-width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    max-width: 750px;
+  }
 }
