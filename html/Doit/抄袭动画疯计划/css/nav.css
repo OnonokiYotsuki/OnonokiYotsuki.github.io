@@ -2,6 +2,90 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --anime-white-rgb: 255, 255, 255;
+  --anime-black-rgb: 0, 0, 0;
+  --anime-primary-color: #00b4d8;
+  --anime-primary-rgb: 0, 180, 216;
+  --anime-primary-hover: #59d3eb;
+  --anime-secondary-color: #e67600;
+  --anime-secondary-rgb: 230, 118, 0;
+  --anime-secondary-hover: #f68b19;
+  --anime-tertiary-color: #ea7b94;
+  --anime-specific-color: #00555f;
+  --baha-primary-color: #117e96;
+  --baha-primary-light: #13aeab;
+  --anime-background-base: #f6f6fa;
+  --anime-background-base-rgb: 246, 246, 250;
+  --anime-background-elevated: #ffffff;
+  --anime-background-fill: #eaeff0;
+  --anime-background-fill-rgb: 234, 239, 240;
+  --text-default-color: #2e2f31;
+  --text-secondary-color: rgba(46, 47, 49, 0.6);
+  --text-tertiary-color: rgba(46, 47, 49, 0.3);
+  --text-quaternary-color: rgba(46, 47, 49, 0.18);
+  --text-on-primary: #ffffff;
+  --border-color: #d1d1d1;
+  --gray0-color: #f2f2f7;
+  --gray0-color-rgb: 242, 242, 247;
+  --gray1-color: #e5e5ea;
+  --gray2-color: #d1d1d6;
+  --gray3-color: #c7c7cc;
+  --gray4-color: #aeaeb2;
+  --gray5-color: #8e8e93;
+  --seperator-transparent: #3c3c4326;
+  --seperator-solid: #c6c6c8;
+  --emphasize-error: #ff3838;
+  --nav-color-bg: rgba(var(--anime-primary-rgb), 0.8);
+  --nav-text-hover: rgba(var(--anime-white-rgb), 0.6);
+  --border-shadow: rgba(150, 150, 150, 0.1);
+  --border-shadow-hover: rgba(107, 107, 107, 0.3);
+  --border-timeline: var(--border-color);
+  --border-text-list: var(--border-color);
+  --border-divid-line: var(--border-color);
+  --border-search-card-line: var(--border-color);
+  --videoplayer-damu-list-hover: var(--anime-background-fill);
+  --videoplayer-anime-title: var(--text-default-color);
+  --card-hover-bg: rgba(var(--anime-secondary-rgb), 0.2);
+  --card-other-hover-bg: #ffe3e9;
+  --card-bg: var(--anime-background-elevated);
+  --card-brand-bg: var(--anime-background-elevated);
+  --card-history-bg: var(--anime-background-elevated);
+  --card-fb-bg: var(--anime-background-base);
+  --card-fbcommunicate-bg: transparent;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-bg-hover: rgba(0, 0, 0, 0.1);
+  --text-section-hightlight: var(--anime-background-fill);
+  --text-sub-color: var(--text-secondary-color);
+  /* --text-section-anime-time: #f5f5f5; */
+  --text-section-hover: #ffb427;
+  --text-tag-in-hover: rgb(var(--anime-white-rgb));
+  --block-color: rgb(var(--anime-white-rgb));
+  --selected-color: var(--anime-secondary-color);
+  --link-default-color: var(--anime-primary-color);
+  --span-animelist-switch-bg: rgb(var(--anime-white-rgb));
+  --span-animelist-switch-text: #195877;
+  --span-hours: rgba(55, 55, 55, 0.9);
+  --span-days: var(--gray3-color);
+  --span-R18: rgba(173, 44, 35, 0.9);
+  --span-paid: rgba(239, 149, 1, 0.9);
+  --span-new-anime: rgba(219, 85, 57, 0.9);
+  --span-color-ova: rgba(88, 141, 178, 0.9);
+  --span-text: rgb(var(--anime-white-rgb));
+  --span-bilingual: rgba(218, 50, 106, 0.9);
+  --span-playing-now: rgba(70, 181, 31, 0.9);
+  --btn-primary: var(--anime-primary-color);
+  --btn-primary-hover: var(--anime-primary-hover);
+  --btn-more: #ebebeb;
+  --btn-more-hover: #f6f8f9;
+  --btn-favorite-video: #ea81aa;
+  --btn-bannerslider: rgba(var(--anime-primary-rgb), 0.7);
+  --btn-bannerslider-hover: rgba(35, 153, 210, 0.9);
+  --btn-search-trashicon-bg: rgb(var(--anime-white-rgb));
+  --btn-search-trashicon-bg-hover: rgba(150, 150, 150, 0.1);
+  --auxiliary-line: #e6e6e6;
+  --tag-search-bg: #f5f5f5;
+}
 .container,
 .container-fluid {
   width: 100%;
@@ -18,6 +102,13 @@ a {
 }
 nav {
   height: 90px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000000;
+}
+.nav-block {
+  height: 90px;
+  width: 100%;
 }
 .top {
   display: flex;
@@ -105,6 +196,8 @@ ul {
 }
 .banner {
   width: 100%;
+  height: auto;
+  display: block;
 }
 /* 暗黑模式切换 */
 .dark_swift_button {
@@ -142,11 +235,11 @@ ul {
 .radio {
   position: absolute;
   background-color: #d1d1d1;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  top: 3px;
-  left: 3px;
+  top: 4px;
+  left: 4px;
   transition: all 0.5s ease 0s;
 }
 /* 搜索框 */

@@ -1,0 +1,46 @@
+section {
+  height: 100vh;
+}
+section p {
+  color: #2e2f31;
+}
+.anime-menu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.anime-menu .switcher {
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+}
+.anime-menu .switcher {
+  font-size: 1.1rem;
+}
+.anime-menu .switcher p {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.anime-menu p:nth-child(2) {
+  color: var(--text-secondary-color);
+}
+.anime-menu .bbb {
+  background-color: #d1d1d1;
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 8px;
+  top: 2px;
+  left: -9px;
+  transition: all 0.5s ease-in-out;
+}
+.filter {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+.filter img {
+  height: 12px;
+}
