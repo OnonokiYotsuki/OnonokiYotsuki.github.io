@@ -173,7 +173,6 @@ ul {
   position: relative;
 }
 .main-menu {
-  /*  overflow: hidden; */
   display: flex;
 }
 .menu-icon {

@@ -1,0 +1,75 @@
+{
+    "workbench.editor.showTabs": true,
+    "view-in-browser.default": "edge",
+    "editor.fontSize": 17,
+    "liveServer.settings.port": 8010,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "vscode-edge-devtools.mirrorEdits": true,
+    "vscode-edge-devtools.webhint": false,
+    "vscode-edge-devtools.fallbackRevision": "@d8ee69a5ee9b969bbbff9304804f2b045e584db5",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "tabnine.experimentalAutoImports": true,
+    "editor.linkedEditing": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[java]": {
+        
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "cSpell.userWords": [
+        "animehaibao",
+        "donghua",
+        "headicon",
+        "searchanime",
+        "searchinput"
+    ],
+    "cSpell.languageSettings": [
+
+
+    
+    ],
+    "files.autoSave": "afterDelay",
+    "java.showBuildStatusOnStart.enabled": "notification",
+    "java.debug.settings.forceBuildBeforeLaunch": false,
+    "java.project.referencedLibraries": [
+
+    
+    ],
+    "background.customImages": [
+        {"background.enabled": false}
+    ],
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "'monocraft',Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "tabnine.disable_file_regex": [
+    
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "liveServer.settings.donotVerifyTags": true,
+    "java.configuration.runtimes": [],
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Dracula",
+    "workbench.productIconTheme": "fluent-icons",
+    "git.autofetch": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true
+    },
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "debug.console.acceptSuggestionOnEnter": "on"
+}
