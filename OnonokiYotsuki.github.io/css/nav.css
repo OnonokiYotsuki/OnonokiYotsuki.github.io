@@ -1,0 +1,122 @@
+@charset "utf-8";
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  background-color: rgb(123, 161, 197);
+  font-size: 20px;
+  color: rgb(234, 247, 255);
+  opacity: 0.9;
+  z-index: 100;
+  align-items: center;
+  overflow: hidden;
+}
+nav .navtitle {
+  padding-left: 50px;
+  padding-right: 350px;
+  font-weight: bolder;
+  display: flex;
+  align-items: flex-end;
+}
+nav .navtitle div {
+  margin-bottom: 10px;
+}
+nav .navtitle strong {
+  font-size: 50px;
+  font-weight: bold;
+}
+.main-menu {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+.menu-btn-check {
+  display: none;
+}
+nav .main-menu a {
+  justify-content: center;
+  text-decoration: none;
+  width: 120px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(84, 109, 158);
+  transition: 0.5s;
+  z-index: 1;
+}
+nav .main-menu .navanim {
+  width: 120px;
+  background-color: rgb(155, 200, 240);
+  border-radius: 10px;
+  transition: all 0.5s ease 0s;
+  height: 66px;
+  position: absolute;
+}
+nav .home,
+a:nth-child(1):hover ~ .navanim {
+  width: 120px;
+  left: 650px;
+}
+nav .about,
+a:nth-child(2):hover ~ .navanim {
+  width: 120px;
+  left: 770px;
+}
+nav .blog,
+a:nth-child(3):hover ~ .navanim {
+  width: 120px;
+  left: 890px;
+}
+nav .album,
+a:nth-child(4):hover ~ .navanim {
+  width: 120px;
+  left: 1010px;
+}
+nav .join,
+a:nth-child(5):hover ~ .navanim {
+  width: 120px;
+  left: 1130px;
+}
+a:nth-child(6):hover ~ .navanim {
+  width: 120px;
+  left: 1250px;
+}
+@media (max-width: 500px) {
+  nav {
+    overflow: visible;
+  }
+  nav .navtitle {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bolder;
+    display: flex;
+    justify-items: center;
+  }
+  nav .main-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    border: 3px solid red;
+    height: auto;
+  }
+  #menu-btn-check {
+    display: none;
+  }
+  #menu-btn-check:checked + label .main-menu {
+    border: 3px solid #495f8c;
+    display: flex;
+  }
+  .menu-btn-check {
+    position: absolute;
+    left: 350px;
+    display: block;
+  }
+}
+@media (min-width: 500px) {
+  #menu-btn-check {
+    display: none;
+  }
+}

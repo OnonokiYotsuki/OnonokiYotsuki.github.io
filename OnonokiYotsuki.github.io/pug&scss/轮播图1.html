@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        // jQuery 代码
+        $(function () {
+            // 获取图片的数量
+            var count = $('.slide').length;
+
+            // 设置当前显示图片的索引
+            var currentIndex = 0;
+
+            // 监听 prev 按钮的点击事件
+            $('#prev').click(function () {
+                // 显示上一张图片
+                showPrev();
+            });// 显示上一张图片
+            function showPrev() {
+                // 如果当前图片索引为 0，说明已经是第一张图片了，不需要再显示上一张图片
+                if (currentIndex === 0) {
+                    return;
+                }
+
+                // 否则，将当前图片索引减 1，并显示上一张图片
+                currentIndex--;
+                $('.slide').eq(currentIndex).css('left', '-100%');
+                $('.slide').eq(currentIndex + 1).animate({ left: '100%' }, function () {
+                    $(this).css('left', '100%');
+                });
+                $('.slide').eq(currentIndex).animate({ left: '0' });
+            }
+
+            // 显示下一张图片
+            function showNext() {
+                // 如果当前图片索引已经是最后一张图片，说明已经没有下一张图片了，不需要再显示下一张图片
+                if (currentIndex === count - 1) {
+                    return;
+                }
+
+                // 否则，将当前图片索引加 1，并显示下一张图片
+                currentIndex++;
+                $('.slide').eq(currentIndex).css('left', '100%');
+                $('.slide').eq(currentIndex - 1).animate({ left: '-100%' }, function () {
+                    $(this).css('left', '-100%');
+                });
+                $('.slide').eq(currentIndex).animate({ left: '0' });
+            }
+            // 监听 next 按钮的点击事件
+            $('#next').click(function () {
+                // 显示下一张图片
+                showNext();
+            });
+
+        })
+    </script>
+    <style>
+        /* CSS 样式 */
+        #container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML 结构 -->
+    <div id="container">
+        <img src="/img/about1.jpg" class="slide">
+        <img src="/img/about2.jpg" class="slide">
+        <img src="/img/about3.jpg" class="slide">
+    </div>
+    <div id="indicator">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+</body>
+
+</html>
