@@ -41,9 +41,13 @@ ul {
   height: 25px;
   width: 25px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .top-right ul li:nth-child(1) {
-  background-image: url("../img/nav/navicon_notification.svg");
+  background-image: url("../img/nav/search-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
 }
 .top-right ul li:nth-child(2) {
   background-image: url("../img/nav/navicon_notification.svg");
@@ -52,13 +56,16 @@ ul {
   background-image: url("../img/nav/navicon_notification.svg");
 }
 .top-right ul li:nth-child(4) {
+  background-image: url("../img/nav/navicon_notification.svg");
+}
+.top-right ul li:nth-child(5) {
   background-image: url("../img/nav/defyhcb_s.png");
   background-position: center;
   border-radius: 50%;
   height: 35px;
   width: 35px;
 }
-.top-right ul li:nth-child(5) {
+.top-right ul li:nth-child(6) {
   background-image: url("../img/nav/baha_s.png");
   height: 35px;
   width: 35px;
@@ -152,7 +159,7 @@ ul {
 .anime_search input {
   border-radius: 8px;
   border: 1px solid #d1d1d1;
-  height: 30px;
+  height: 32px;
   width: 81%;
   padding-left: 8px;
   padding-right: 40px;
@@ -168,6 +175,14 @@ ul {
   position: absolute;
   right: 0px;
   top: 0px;
+}
+@media (max-width: 615px) {
+  .top-right ul li:nth-child(1) {
+    display: flex;
+  }
+  .anime_search {
+    display: none;
+  }
 }
 /* 响应式 */
 @media (max-width: 810px) {
