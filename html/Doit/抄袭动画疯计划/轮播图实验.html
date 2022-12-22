@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+        }
+
+        .slides {
+            position: relative;
+            width: 1400px;
+            height: 500px;
+            box-shadow: 17px 15px 15px -3px rgba(0, 0, 0, 0.1);
+            /*background-color: #eee;*/
+            overflow: hidden;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            /* 外观 */
+            width: inherit;
+            height: inherit;
+            font-family: Helvetica;
+            font-size: 240px;
+            color: #eee;
+            box-shadow: 17px 15px 15px -3px rgba(0, 0, 0, 0.1);
+            /* color: transparent;
+            -webkit-background-clip: text; */
+            transition: 2s;
+            transform: ease-in-out;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            /* 位置 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide:nth-of-type(1) {
+            background-color: #f2e205;
+            background-image: url("img/test/1.png");
+        }
+
+        .slide:nth-of-type(2) {
+            background-color: #f25c05;
+            background-image: url("img/test/2.png");
+            left: 101%;
+        }
+
+        .slide:nth-of-type(3) {
+            background-color: #495f8c;
+            background-image: url("img/test/3.png");
+            left: 202%;
+        }
+
+        .slide:nth-of-type(4) {
+            background-color: #495f8c;
+            background-image: url("img/test/1.png");
+            left: 303%;
+        }
+
+        .control-label {
+            position: absolute;
+            width: 100%;
+            bottom: 12px;
+            text-align: center;
+        }
+
+        .control-label label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+            margin: 0 3px;
+            border: 2px solid #eee;
+        }
+
+        #l1 {
+            background-color: #333;
+        }
+
+        .control-btn {
+            position: absolute;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+        }
+
+        .control-btn .btn {
+            color: #eee;
+            font-size: 200px;
+            opacity: 0.5;
+            font-weight: bolder;
+        }
+
+        .slideD {
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+            ;
+            background-size: cover;
+            background-position: top;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+    <script>
+        $(function () {
+            which = 1;
+            /* 点击轮播 */
+            $('button').click(function () {
+                if ($(this).attr('id') == 'forward') {
+                    if (which == 3) {
+                        moveIt(2, 1);
+                    } else { moveIt(1, 1); }
+                    clearInterval(time); timer();
+                }
+                if ($(this).attr('id') == 'back') {
+                    moveIt(1, 2);
+                    clearInterval(time); timer();
+                }
+            })
+            $('label').click(function () {
+                if ($(this).attr('id') == 'l1') {
+                    moveIt(2, 1);
+                    clearInterval(time); timer();
+                }
+                if ($(this).attr('id') == 'l2') {
+                    moveIt(2, 2);
+                    clearInterval(time); timer();
+                }
+                if ($(this).attr('id') == 'l3') {
+                    moveIt(2, 3);
+                    clearInterval(time); timer();
+                }
+            })
+            /* 轮播函数 */
+            function moveIt(f, a) {
+                $('label').css('background-color', '#eee')
+                if (f == 1) {
+                    switch (a) {
+                        case 1:
+                            which++;
+                            if (which == 5) { which = 1 }
+                            break;
+                        case 2:
+                            which--;
+                            if (which == 0) { which = 3 }
+                            break;
+                        default:
+                            break;
+                    }
+                } else if (f == 2) {
+                    which = a;
+                }
+                switch (which) {
+                    case 1:
+                        $('.slide').css('transform', 'translateX(0%)');
+                        $('#l1').css('background-color', '#333');
+                        break;
+                    case 2: $('.slide').css('transition', '2s');
+                        $('.slide').css('transform', 'translateX(-101%)'); $('#l2').css('background-color', '#333');
+                        break;
+                    case 3:
+                        $('.slide').css('transform', 'translateX(-202%)'); $('#l3').css('background-color', '#333');
+                        break;
+                    case 4:
+                        $('.slide').css('transform', 'translateX(-303%)'); $('#l1').css('background-color', '#333');
+                        setTimeout(function () {
+                            $('.slide').css('transition', '0s');
+                            $('.slide').css('transform', 'translateX(0%)')
+                        }, 2000);
+                        $('.slide').css('transition', '2s');
+                        break;
+                    default:
+                        break;
+                }
+            }
+            /* 重置卡片 */
+            function reset() {
+
+
+            }
+            /* 计时轮播 */
+            let time;
+            clearInterval(time); timer();
+            function timer() {
+                time = setInterval(() => {
+                    moveIt(1, 1);
+                    console.log('go');
+                }, 3000)
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <ul class="slides">
+        <li class="slide">
+            <div class="slideD">1</div>
+        </li>
+        <li class="slide">
+            <div class="slideD">2</div>
+        </li>
+        <li class="slide">
+            <div class="slideD">3</div>
+        </li>
+        <li class="slide">
+            <div class="slideD">1</div>
+        </li>
+        <div class="control-label">
+            <label id="l1"></label>
+            <label id="l2"></label>
+            <label id="l3"></label>
+        </div>
+        <div class="control-btn">
+            <button class="btn" id="back">
+                < </button>
+                    <button class="btn" id="forward">></button>
+        </div>
+    </ul>
+</body>
+
+</html>
