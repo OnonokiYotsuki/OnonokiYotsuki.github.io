@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0005 0.00053 9.712 0.00053 9.712 9.71143 0.0005 9.71143"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-674.000000, -402.000000)">
+            <g id="Group-3" transform="translate(674.000000, 402.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M6.9855,5.15653 L3.8305,7.26353 C3.5905,7.42353 3.2685,7.25153 3.2685,6.96153 L3.2685,2.74853 C3.2685,2.45953 3.5905,2.28753 3.8305,2.44853 L6.9855,4.55453 C7.2005,4.69753 7.2005,5.01353 6.9855,5.15653 M8.0235,0.00053 L1.6895,0.00053 C0.7565,0.00053 0.0005,0.75653 0.0005,1.68853 L0.0005,8.02353 C0.0005,8.95553 0.7565,9.71153 1.6895,9.71153 L8.0235,9.71153 C8.9565,9.71153 9.7125,8.95553 9.7125,8.02353 L9.7125,1.68853 C9.7125,0.75653 8.9565,0.00053 8.0235,0.00053" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

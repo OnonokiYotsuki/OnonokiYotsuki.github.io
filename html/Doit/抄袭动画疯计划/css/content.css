@@ -1,9 +1,10 @@
-section {
-  height: 100vh;
+body {
+  background-color: #f6f6fa;
 }
 section p {
   color: #2e2f31;
 }
+/* 番剧和周期表和排序 */
 .anime-menu {
   margin-top: 50px;
   display: flex;
@@ -14,6 +15,7 @@ section p {
   position: relative;
   height: 50px;
   align-items: center;
+  left: 30px;
 }
 .anime-menu .switcher {
   font-size: 1.1rem;
@@ -43,4 +45,128 @@ section p {
 }
 .filter img {
   height: 12px;
+}
+/* 本季新番 */
+.newanime-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.newanime-content {
+  width: 15%;
+  margin-right: 20px;
+}
+.newanime-card {
+  width: 100%;
+  position: relative;
+  font-size: 0.8em;
+  box-shadow: 4px 11px 10px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.newanime-card:hover .newanime-card-img {
+  transform: scale(1.1);
+}
+.newanime-card-pic {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+.newanime-card-pic p {
+  color: #fff;
+}
+.newanime-card-img {
+  background: url("../img/anime_card/anime_pic\ \(10\).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  width: 100%;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.5s;
+}
+
+.newanime-card-time {
+  display: flex;
+  position: absolute;
+  background-color: rgb(42, 44, 44, 0.9);
+  border-radius: 4px;
+  padding: 3px;
+  left: 10px;
+  top: 5px;
+  z-index: 1;
+}
+.newanime-card-time img {
+  content: url("../img/content/pic-clock.svg");
+  width: 16px;
+}
+.newanime-card-suki {
+  position: absolute;
+  background: url("../img/content/like_default.svg");
+  height: 40px;
+  width: 40px;
+  right: 5px;
+  z-index: 1;
+}
+.newanime-card-episode {
+  display: flex;
+  position: absolute;
+  bottom: 35px;
+  left: 10px;
+}
+.newanime-card-episode img {
+  content: url("../img/content/pic-tv.svg");
+  width: 12px;
+}
+.newanime-card-name {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.newanime-card-name {
+  border-radius: 0 0 8px 8px;
+}
+.newanime-name {
+  height: 15px;
+  padding: 3px;
+  padding-left: 10px;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
+.newanime-name p:hover {
+  transform: translateX(-100%);
+}
+.newanime-name p {
+  white-space: nowrap;
+  transition: transform 2s;
+}
+.newanime-watch img {
+  content: url("../img/content/pic-fire.svg");
+  width: 12px;
+}
+.newanime-watch {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .newanime-content {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newanime-content {
+    width: 33.333333%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .newanime-content {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .newanime-content {
+    width: 100%;
+  }
 }
