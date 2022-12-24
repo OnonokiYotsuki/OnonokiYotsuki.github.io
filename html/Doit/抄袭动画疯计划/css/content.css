@@ -218,7 +218,7 @@ section p {
 }
 .hot-anime-card {
   position: relative;
-  width: calc(13%);
+  width: 13%;
   height: 350px;
   background-color: #fff;
   border-radius: 8px;
@@ -270,8 +270,16 @@ section p {
   font-size: 0.4rem;
 }
 /* 响应式 */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+  .hot-anime-card {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 1300px) {
   .newanime-content {
+    width: 20%;
+  }
+  .hot-anime-card {
     width: 20%;
   }
 }
@@ -279,14 +287,23 @@ section p {
   .newanime-content {
     width: 30%;
   }
+  .hot-anime-card {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 576px) {
   .newanime-content {
+    width: 45%;
+  }
+  .hot-anime-card {
     width: 45%;
   }
 }
 @media screen and (max-width: 430px) {
   .newanime-content {
     width: 65%;
+  }
+  .hot-anime-card {
+    width: 60%;
   }
 }
