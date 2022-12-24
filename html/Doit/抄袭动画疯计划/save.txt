@@ -1,0 +1,910 @@
+<a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="newanime-content" href="#">
+                    <div class="newanime-date"></div>
+                    <div class="newanime-card">
+                        <div class="newanime-card-pic">
+                            <div class="newanime-card-time">
+                                <img>
+                                <p></p>
+                            </div>
+                            <div class="newanime-card-suki"></div>
+                            <div class="newanime-card-img"></div>
+                            <div class="newanime-card-episode">
+                                <img>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="newanime-card-name">
+                            <div class="newanime-name">
+                                <p></p>
+                            </div>
+                            <div class="newanime-watch">
+                                <img>
+                                <p>40万</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
