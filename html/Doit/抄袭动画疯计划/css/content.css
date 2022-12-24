@@ -187,12 +187,27 @@ section p {
 .final-card p {
   font-size: 2rem;
 }
+.showMoreBtn {
+  cursor: pointer;
+  background-color: #00b4d8;
+  box-shadow: 4px 0px 10px 3px rgba(150, 150, 150, 0.1);
+  max-width: 400px;
+  width: calc(100% - 16px);
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 2.5;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+.showMoreBtn:hover {
+  background-color: #59d3eb;
+}
 /* 近期热播 */
 .recent-hot {
   margin-top: 100px;
-  height: 100vh;
 }
-.recent-hot .title {
+.titleOne {
   font-size: 1.4rem;
   margin-bottom: 30px;
 }
@@ -210,9 +225,13 @@ section p {
   box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
   margin: 0 8px 30px;
 }
+.hot-anime-card:hover .hot-anime-img {
+  transform: scale(1.05);
+}
 .hot-anime-pic {
   height: 87%;
   width: 100%;
+  overflow: hidden;
 }
 .hot-anime-img {
   background-image: url("../img/anime_card/hotAnime/anime_pic(0).jpg");
@@ -222,6 +241,7 @@ section p {
   width: 100%;
   height: 100%;
   border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .hot-anime-info {
@@ -231,6 +251,8 @@ section p {
 }
 .hot-anime-name {
   font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .hot-anime-information {
   justify-content: space-between;

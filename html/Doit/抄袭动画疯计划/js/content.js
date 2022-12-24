@@ -49,31 +49,10 @@ $(document).ready(function () {
         { date: '2022-12-11', time: '17:00', name: '機動戰士鋼彈 水星的魔女', episode: '第10集', watch: '131.4万' },
         { date: '2022-12-10', time: '22:00', name: '因為是反派大小姐所以養了魔王', episode: '第12集', watch: '71.2万' },
         { date: '其他', time: '09:30', name: '電影版 奇巧計程車：撲朔謎林', episode: '', watch: '2.6万' },
-        { date: '其他', time: '11:00', name: '再見了，橡果兄弟！', episode: '', watch: '9185' },
-    ];
+        { date: '其他', time: '11:00', name: '再見了，橡果兄弟！', episode: '', watch: '9185' },];
     for (let i = 0; i < newAnimeDataArray.length; i++) {
         createNewAnimeCard();
         giveNewAnimeCardValue(i);
-    }
-    /* 添加近期热播卡片 */
-    var recentHotAnimeDataArray = [
-        { date: '2022/10',name: '入間同學入魔了！第三季', episode: '共11集', watch: '95万' },
-        { date: '2022/10',name: '路人超能 100 第三季', episode: '共12集', watch: '135.5万' },
-        { date: '2022/10',name: '孤獨搖滾！', episode: '共11集', watch: '304.3万' },
-        { date: '1996/06',name: '烏龍派出所', episode: '共341集', watch: '335.2万' },
-        { date: '2022/10',name: '我的英雄學院 第六季', episode: '共12集', watch: '131.8万' },
-        { date: '2021/04',name: '86－不存在的戰區－', episode: '共26集', watch: '940.9万' },
-        { date: '2014/04',name: '排球少年！！', episode: '共25集', watch: '183.5万' },
-        { date: '2022/10',name: '菜鳥鍊金術師開店營業中', episode: '共12集', watch: '96.4万' },
-        { date: '2022/10',name: 'BLEACH 死神 千年血戰篇', episode: '共11集', watch: '173.7万' },
-        { date: '022/10',name: '夫婦以上，戀人未滿', episode: '共11集', watch: '88.6万' },
-        { date: '022/09',name: '機動戰士鋼彈 水星的魔女', episode: '共11集', watch: '131.4万' },
-        { date: '2018/10',name: 'JOJO 的奇妙冒險 黃金之風', episode: '共42集', watch: '1180万' },
-        { date: '022/10',name: '藍色監獄', episode: '共11集', watch: '140万' },
-        { date: '022/10',name: '我想成為影之強者！', episode: '共12集', watch: '291.2万' },]
-    for (let i = 0; i < 14; i++) {
-        createRecentHotAnimeCard()
-        giveRecentHotAnimeCardValue(i)
     }
     function createNewAnimeCard() {
         $('<a>').addClass('newanime-content').attr('href', '#').append(
@@ -111,8 +90,28 @@ $(document).ready(function () {
         /* $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")') */
         $('.newanime-card-img').eq(i).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/anime_card/anime_pic(' + i + ').jpg")')
     }
+    /* 添加近期热播卡片 */
+    var recentHotAnimeDataArray = [
+        { date: '2022/10', name: '入間同學入魔了！第三季', episode: '共11集', watch: '95万' },
+        { date: '2022/10', name: '路人超能 100 第三季', episode: '共12集', watch: '135.5万' },
+        { date: '2022/10', name: '孤獨搖滾！', episode: '共11集', watch: '304.3万' },
+        { date: '1996/06', name: '烏龍派出所', episode: '共341集', watch: '335.2万' },
+        { date: '2022/10', name: '我的英雄學院 第六季', episode: '共12集', watch: '131.8万' },
+        { date: '2021/04', name: '86－不存在的戰區－', episode: '共26集', watch: '940.9万' },
+        { date: '2014/04', name: '排球少年！！', episode: '共25集', watch: '183.5万' },
+        { date: '2022/10', name: '菜鳥鍊金術師開店營業中', episode: '共12集', watch: '96.4万' },
+        { date: '2022/10', name: 'BLEACH 死神 千年血戰篇', episode: '共11集', watch: '173.7万' },
+        { date: '2022/10', name: '夫婦以上，戀人未滿', episode: '共11集', watch: '88.6万' },
+        { date: '2022/09', name: '機動戰士鋼彈 水星的魔女', episode: '共11集', watch: '131.4万' },
+        { date: '2018/10', name: 'JOJO 的奇妙冒險 黃金之風', episode: '共42集', watch: '1180万' },
+        { date: '2022/10', name: '藍色監獄', episode: '共11集', watch: '140万' },
+        { date: '2022/10', name: '我想成為影之強者！', episode: '共12集', watch: '291.2万' }]
+    for (let index = 0; index < 14; index++) {
+        createRecentHotAnimeCard();
+        giveRecentHotAnimeCardValue(index);
+    }
     function createRecentHotAnimeCard() {
-        let x=$('.hot-anime');
+        let x = $('.hot-anime');
         $('<a>').attr({
             href: '#',
             class: 'hot-anime-card'
@@ -135,9 +134,25 @@ $(document).ready(function () {
         ).appendTo(x); // Append the created element to the body
 
     }
-    function giveRecentHotAnimeCardValue(i){
+    function giveRecentHotAnimeCardValue(i) {
         $('.hot-anime-name').eq(i).html(recentHotAnimeDataArray[i].name)
         $('.hot-anime-information i p:nth-child(2)').eq(i).html(recentHotAnimeDataArray[i].date)
-        $('.hot-anime-img').css('background-image', 'url("../img/anime_card/hotAnime/anime_pic('+0+').jpg")')
+        $('.hot-anime-img').eq(i).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/anime_card/hotAnime/anime_pic(' + i + ').jpg")')
     }
+    /* 显示更多按钮 */
+    hideOrShowCard(1);
+    $('.showMoreBtn').click(function(){
+        hideOrShowCard(0);
+        $('.showMoreBtn').hide();
+    })
+    function hideOrShowCard(f) {
+            for (let index = 18; index <= $('.newanime-content').length; index++) {
+                if(f==1){
+            $('.newanime-content').eq(index).hide();
+        }else{
+            $('.newanime-content').eq(index).show();
+        }
+    }
+    }
+
 })
