@@ -161,11 +161,11 @@ section p {
 }
 @media screen and (max-width: 576px) {
   .newanime-content {
-    width: 40%;
+    width: 45%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
   .newanime-content {
-    width: 80%;
+    width: 65%;
   }
 }
