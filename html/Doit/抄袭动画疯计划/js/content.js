@@ -53,7 +53,7 @@ $(document).ready(function () {
     ];
     for (let i = 0; i < newAnimeDataArray.length; i++) {
         createNewAnimeCard();
-        giveNewAnimeCardValue(i);
+        giveNewAnimeCardValue(i);   
     }
 
     function createNewAnimeCard() {
