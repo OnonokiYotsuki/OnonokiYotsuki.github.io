@@ -90,7 +90,7 @@ $(document).ready(function () {
         $('.newanime-card-episode p').eq(i).html(newAnimeDataArray[i].episode);
         $('.newanime-name p').eq(i).html(newAnimeDataArray[i].name);
         $('.newanime-watch p').eq(i).html(newAnimeDataArray[i].watch);
-        $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic\ \(' + i + '\).jpg")')
+        $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")')
     }
 
 })
