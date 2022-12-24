@@ -299,11 +299,11 @@ section p {
     width: 45%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
   .newanime-content {
-    width: 65%;
+    width: 80%;
   }
   .hot-anime-card {
-    width: 60%;
+    width: 70%;
   }
 }
