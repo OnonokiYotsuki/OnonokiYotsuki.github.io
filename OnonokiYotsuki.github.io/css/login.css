@@ -1,0 +1,93 @@
+body {
+  background-image: url(../img/login_bg.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: -10;
+}
+.login {
+  background-color: rgba(50, 59, 88, 0.7);
+  margin: auto;
+  margin-top: 300px;
+  width: 600px;
+  height: 330px;
+  border-radius: 15px;
+  opacity: 0.9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(50 59 88 / 80%);
+}
+.login-logo {
+  font-size: 50px;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    rgba(98, 201, 248, 0.6),
+    rgba(243, 111, 255, 0.6),
+    rgba(247, 129, 129, 0.6),
+    rgba(241, 239, 104, 0.6),
+    rgba(117, 226, 84, 0.6),
+    rgba(98, 201, 248, 0.6)
+  );
+  background-size: 800%;
+  animation: gradient 30s infinite linear;
+  color: transparent;
+  line-height: 100px;
+}
+@keyframes gradient {
+  100% {
+    background-position: -800% 0%;
+  }
+}
+.txt {
+  padding-top: 30px;
+  border: none;
+  border-bottom: 1px rgb(49, 102, 245) solid;
+  background: transparent;
+  outline: none;
+  height: 30px;
+}
+.txt:hover,
+.txt:focus {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+form {
+  margin-top: 0px;
+}
+.LoginButton {
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 9px;
+  background-color: rgba(75, 102, 190, 0.7);
+  border: none;
+  box-shadow: 0px 0px 40px 9px rgba(0, 0, 0, 0.1);
+}
+.LoginButton:hover {
+  background-color: rgba(128, 152, 231, 0.7);
+  transition: 0.3s;
+}
+.GuestButton {
+  margin-top: 10px;
+  margin-left: 99px;
+  bottom: 0px;
+  background: none;
+  border: none;
+}
+.GuestButton:hover {
+  cursor: pointer;
+  color: rgb(163, 211, 255);
+}

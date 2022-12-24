@@ -55,7 +55,7 @@ section p {
 }
 .newanime-content {
   width: 15%;
-  margin-right: 20px;
+  padding: 10px 8px 0px 8px;
 }
 .newanime-card {
   width: 100%;
@@ -152,21 +152,21 @@ section p {
 }
 @media screen and (max-width: 1200px) {
   .newanime-content {
-    width: 25%;
+    width: 20%;
   }
 }
 @media screen and (max-width: 768px) {
   .newanime-content {
-    width: 33.333333%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 576px) {
   .newanime-content {
-    width: 50%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 360px) {
   .newanime-content {
-    width: 100%;
+    width: 80%;
   }
 }
