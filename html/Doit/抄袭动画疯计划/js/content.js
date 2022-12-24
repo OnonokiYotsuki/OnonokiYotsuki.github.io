@@ -57,7 +57,6 @@ $(document).ready(function () {
     }
 
     function createNewAnimeCard() {
-        let newanime_block = $('.newanime-block')
         $('<a>').addClass('newanime-content').attr('href', '#').append(
             $('<div>').addClass('newanime-date'),
             $('<div>').addClass('newanime-card').append(
@@ -83,7 +82,7 @@ $(document).ready(function () {
                     )
                 )
             )
-        ).appendTo(newanime_block);
+        ).insertBefore($('.newanime-finalcard'));
     }
     function giveNewAnimeCardValue(i) {
         $('.newanime-card-time p').eq(i).html(newAnimeDataArray[i].time);
