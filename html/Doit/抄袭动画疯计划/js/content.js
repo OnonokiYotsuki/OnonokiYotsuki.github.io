@@ -89,8 +89,9 @@ $(document).ready(function () {
         $('.newanime-card-time p').eq(i).html(newAnimeDataArray[i].time);
         $('.newanime-card-episode p').eq(i).html(newAnimeDataArray[i].episode);
         $('.newanime-name p').eq(i).html(newAnimeDataArray[i].name);
-        $('.newanime-watch p').eq(i).html(newAnimeDataArray[i].watch);
-        $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")')
+        $('.newanime-watch p').eq(i).html(newAnimeDataArray[i].watch);https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/%E6%8A%84%E8%A2%AD%E5%8A%A8%E7%94%BB%E7%96%AF%E8%AE%A1%E5%88%92/img/anime_card/anime_pic(0).jpg
+        /* $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")') */
+        $('.newanime-card-img').eq(i).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/%E6%8A%84%E8%A2%AD%E5%8A%A8%E7%94%BB%E7%96%AF%E8%AE%A1%E5%88%92/img/anime_card/anime_pic('+i+').jpg")')
     }
 
 })
