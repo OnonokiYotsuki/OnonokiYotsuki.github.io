@@ -206,6 +206,7 @@ section p {
 /* 近期热播 */
 .recent-hot {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .titleOne {
   font-size: 1.4rem;
@@ -283,13 +284,14 @@ section p {
   width: 100%;
   white-space: nowrap;
   transition: 0.5s ease;
-  padding-top: 10px;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 .channel {
   content: url("../img/content/publisher/ani-one-logo.png");
   border-radius: 50%;
-  width: 11.5%;
+  width: 11.8%;
   height: width;
   background-color: #fff;
   margin-right: 10px;
@@ -303,18 +305,79 @@ section p {
   position: absolute;
   color: #fff;
   background-color: #59d3eb;
-  height: 30%;
+  height: 60px;
   cursor: pointer;
   width: 1.5%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  z-index: 11;
+  z-index: 13;
   top: 40%;
 }
 .channel-right {
   right: 0;
+}
+/* 相关新闻 */
+.aboutNews {
+  margin-top: 300px;
+}
+.Newstitle {
+  display: flex;
+}
+.Newstitle a {
+  margin-left: 10px;
+  display: flex;
+  line-height: 2.5;
+  color: #00b4d8;
+}
+.Newstitle a p {
+  color: #00b4d8;
+  font-weight: bolder;
+}
+.news-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.news-card {
+  color: #000;
+  width: 30%;
+  height: 156px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 4px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
+}
+.news-card:hover .news-img-block img {
+  transform: scale(1.1);
+}
+.news-img-block {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.news-img-block img {
+  height: inherit;
+  content: url("../img/content/news/《劇場版\ 歌之☆王子殿下♪\ 真愛\ ST☆RISH\ TOURS》主題\ Café\ 即日起正式在台登場.jpg");
+  background-position: center;
+  background-size: cover;
+  transition-duration: 500ms;
+}
+.news-content-text-area {
+  width: 70%;
+  height: 100%;
+  padding: 16px 8px 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.news-content-detail {
+  padding: 12px 5px;
+  color: rgba(46, 47, 49, 0.6);
+  overflow: hidden;
+  flex: 1;
+  line-height: 1;
 }
 /* 响应式 */
 @media screen and (max-width: 1400px) {

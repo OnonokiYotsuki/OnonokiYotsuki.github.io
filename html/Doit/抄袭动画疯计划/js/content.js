@@ -159,7 +159,7 @@ $(document).ready(function () {
         'ani-one-logo','anipass-logo','beast-kingdom-logo','dragon-art-logo','H2O-logo','jy-logo','kawa-logo','mighty-logo','muse-logo','nada-holdings-logo','pw-logo','T&M_logo','wan-mi-logo'
     ]
     for (let index = 0; index < channelLogoInfoArray.length; index++) {
-        $('.channel').eq(index).css('content','url("../img/content/publisher/'+channelLogoInfoArray[index]+'.png")')
+        $('.channel').eq(index).css('content','url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/content/publisher/'+channelLogoInfoArray[index]+'.png")')
     }
     /* 发行商频道浏览按钮 */
     let whereAreYou=0;
@@ -199,5 +199,12 @@ $(document).ready(function () {
             $('.channel-right').css('background-color','#59d3eb')
         }
         
+    }
+    /* 相关新闻 */
+    let aboutNewsInfoArray =[
+        {title:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事',detail:'DeNA 與萬代南夢宮影像製作（Bandai Namco Filmworks Inc.）共同製作的智慧型手機 RPG《宿命迴響（日文原名：takt op.運命は真紅き旋律の街を）》（iOS / Android）預定於 2023 年春季正式',imgUrl:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事'}
+    ]
+    for (let index = 0; index < aboutNewsInfoArray.length; index++) {
+        /* $('.news-img-block img').css('content','url') */
     }
 })
