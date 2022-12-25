@@ -272,6 +272,7 @@ section p {
 }
 .PublisherChannel {
   height: 200px;
+  margin-bottom: 300px;
 }
 /* 发行商频道 */
 .channel-block {
@@ -319,10 +320,8 @@ section p {
   right: 0;
 }
 /* 相关新闻 */
-.aboutNews {
-  margin-top: 300px;
-}
 .Newstitle {
+  margin-top: 40px;
   display: flex;
 }
 .Newstitle a {
@@ -350,7 +349,7 @@ section p {
   margin: 10px 0;
   box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
 }
-.news-card:hover .news-img-block img {
+.news-card:hover .news-img-block div {
   transform: scale(1.1);
 }
 .news-img-block {
@@ -358,12 +357,11 @@ section p {
   height: 100%;
   overflow: hidden;
 }
-.news-img-block img {
+.news-img-block div {
   height: inherit;
-  content: url("../img/content/news/《劇場版\ 歌之☆王子殿下♪\ 真愛\ ST☆RISH\ TOURS》主題\ Café\ 即日起正式在台登場.jpg");
-  background-position: center;
-  background-size: cover;
   transition-duration: 500ms;
+  background-size: cover;
+  background-position: center;
 }
 .news-content-text-area {
   width: 70%;
@@ -376,7 +374,7 @@ section p {
   padding: 12px 5px;
   color: rgba(46, 47, 49, 0.6);
   overflow: hidden;
-  flex: 1;
+  height: 69px;
   line-height: 1;
 }
 /* 响应式 */

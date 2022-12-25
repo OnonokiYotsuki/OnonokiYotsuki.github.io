@@ -202,9 +202,31 @@ $(document).ready(function () {
     }
     /* 相关新闻 */
     let aboutNewsInfoArray =[
-        {title:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事',detail:'DeNA 與萬代南夢宮影像製作（Bandai Namco Filmworks Inc.）共同製作的智慧型手機 RPG《宿命迴響（日文原名：takt op.運命は真紅き旋律の街を）》（iOS / Android）預定於 2023 年春季正式',imgUrl:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事'}
+        {title:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事',detail:'DeNA 與萬代南夢宮影像製作（Bandai Namco Filmworks Inc.）共同製作的智慧型手機 RPG《宿命迴響（日文原名：takt op.運命は真紅き旋律の街を）》（iOS / Android）預定於 2023 年春季正式',imgUrl:'《宿命迴響》封測試玩報導 與擁有古典音樂力量的奏者共譜出優美故事'},
+        {title:'動畫《英雄傳說 閃之軌跡：北方戰役》手機遊戲確定製作 預計明年在日本推出',detail:'宇峻奧汀日本子公司 USERJOY JAPAN 今（23）日宣布，決定製作智慧型手機遊戲《英雄傳說 閃之軌跡：北方戰役（暫譯，英雄伝説 閃の軌跡：Northern War）》，並於 2023 年在日本正式推出。  官方表',imgUrl:''},
+        {title:'【TiCA23】《鏈鋸人》淀治、真紀真聲優戶谷菊之介、楠木灯將舉辦見面會活動',detail:'羚邦於今（23）日宣布，將於 2023 台北國際動漫節舉辦《鏈鋸人》聲優見面會，邀請到飾演淀治與真紀真的聲優戶谷菊之介、楠木灯登台。  2022 年秋季上線的漫畫改編動畫《鏈鋸人》，由曾經製作《咒術迴戰》、《進擊的巨人 ',imgUrl:''},
+        {title:'《劇場版 歌之☆王子殿下♪ 真愛 ST☆RISH TOURS》主題 Café 即日起正式在台登場',detail:'《劇場版 歌之☆王子殿下♪ 真愛 ST☆RISH TOURS》劇場版主題 Café 自今（12/23）起至 2/2 在三創生活園區登場，全店也以作品主題裝飾，除了主題餐點及限定特典，更推出專屬台灣粉絲的期間限定活動。 ',imgUrl:''},
+        {title:'《火影忍者》動畫 20 週年特展 明日正式開展 展覽內容搶先一覽',detail:'為紀念《火影忍者》動畫邁入 20 週年而在台灣舉行的「火影忍者動畫 20 週年特展」，明日（12 月 24 日）即將於新光三越 A11 六樓正式開展，特展中精選了動畫中的八大經典場景還原，以及結合聲光效果的互動體驗區，帶領火影迷重回動畫中的',imgUrl:''},
+        {title:'《角落小夥伴》宣布第三部電影版將於 2023 年日本上映！',detail:'San-X 旗下受到許多人喜愛的知名角色系列「角落小夥伴（角落生物）」今（23）日宣布，其動畫電影系列將於 2023 年在日本推出第三部作品的消息。  今年迎接誕生 10 周年的「角落小夥伴」，在 2019 年首度推出第',imgUrl:''},
+        {title:'日本岩手縣將開設以岩石屬性寶可夢為主題的「小拳石公園」',detail:'繼日本香川縣確定開設「呆呆獸公園」後，寶可夢公司（The Pokémon Company）再度宣布與岩手縣聯合打造以岩石屬性寶可夢為設計概念的「小拳石公園」，預計 2023 年 4 月在岩手縣久慈市開幕。  ',imgUrl:''},
+        {title:'【試片】 《輝夜姬想讓人告白-永不結束的初吻》初吻後也要繼續頭腦戰',detail:'由 A-1 Pictures 改編，連續三季都受到許多人喜愛的戀愛動畫《輝夜姬想讓人告白》，終於推出第一個劇場版。這個在日本以特別上映的形式播出的劇場版，不只是完美的銜接了 TV 版第三季的結尾，同時也是主角御行和輝夜兩人戀情的重要轉捩點，',imgUrl:''},
+        {title:'原創電視動畫《THE MARGINAL SERVICE》2023 年 4 月開播 公開首波宣傳影片',detail:'原創電視動畫《THE MARGINAL SERVICE（ザ・マージナルサービス）》，官方宣布動畫將於 2023 年 4 月開播的消息，並且公開了第一波宣傳影片。  雖說目前還無法窺見作品的全面，但與先前不同，這次的宣傳影',imgUrl:''},
+        {title: '【情報】SOLar老師畫的聖誕裝真紀真',detail: '祝大家聖誕快樂以下開放大家當狗(?)來源',imgUrl: ''},
+        {title: '【情報】しろまんた《前輩有夠煩》卡在煙囪裡的聖誕雙葉',detail: 'しろまんた@shiromanta1020「引っ張ってください！！！」「請幫我拉出來！！！」https://twitter',imgUrl: ''},
+        {title: '【心得】リコリス・リコイル 2022 聖誕蛋糕 分享',detail: '大家好又見面了這次與大家分享的是リコリス・リコイル 2022クリスマスケーキ＜たきな＞官圖開箱！蛋糕內層分佈吃後心得：吃',imgUrl: ''},
+        {title: '【討論】《孤獨搖滾！》動畫最終話"早晨降臨在你身上"之討論串(圖多注意)',detail: '巴哈動畫瘋連結圖多注意推特又被洗版了XD最終話標題"君に朝が降る"(早晨降臨在你身上)出自名曲"転がる岩、君に朝が降る"',imgUrl: ''},
+        {title: '【情報】無限軌道老師畫的聖誕裝櫛田桔梗',detail: '無限軌道老師在自己的推特上畫了穿聖誕服裝的櫛田桔梗祝大家聖誕快樂https://twitter.com/tomose_s',imgUrl: ''},
+        {title: '【繪圖】聖誕節千歌&步夢',detail: '預祝聖誕節快樂!之前4代同堂的這件很喜歡就只挑了推來畫是可以當作聖誕的服裝吧...?不知不覺也畫了第5年的LL聖誕圖呀.',imgUrl: ''},
+        {title: '【討論】動畫《被勇者隊伍開除的馭獸使，邂逅了最強種的貓耳少女》第十三話討論串(完)',detail: '#13 みんなの家妮娜想要留在雷因的身邊並成為雷因的力量，最終妮娜也順利和雷因締結契約成功，勇者因為去黑市買戒子殺雷因花',imgUrl: ''},
+        {title: '【情報】《秋葉原冥途戰爭》「和平なごみ」、「萬年嵐子」PVC 商品化確定！',detail: '＝＝＝＝＝＝＝＝＝＝＝＝　 フィギュア化決定！＝＝＝＝＝＝＝＝＝＝＝＝秋葉原を舞台に”バッキュン”を繰り広げた「なごみ」',imgUrl: ''},
+        {title: '【情報】 TYPE-MOON 官方釋出的《魔法使之夜》2022 年聖誕節賀圖！',detail: 'ハッピーメリークリスマス！聖なる夜に沢山の感謝を込めてhttps://twitter.com/TMitterOffici',imgUrl: ''}
     ]
-    for (let index = 0; index < aboutNewsInfoArray.length; index++) {
-        /* $('.news-img-block img').css('content','url') */
-    }
+    giveNewsCardValue(0,aboutNewsInfoArray,9);
+    function giveNewsCardValue(n,a,i){
+        for (let index = 0; index < 18; index++) {
+        $('.news-img-block div').eq(index).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/content/news/' + a[index].title + '.jpg")')
+        $('.news-content-title').eq(index).html(a[index].title)
+        $('.news-content-detail').eq(index).html(a[index].detail)
+    }}
+
 })
