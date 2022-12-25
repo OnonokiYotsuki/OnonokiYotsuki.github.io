@@ -269,6 +269,53 @@ section p {
   border-radius: 4px;
   font-size: 0.4rem;
 }
+.PublisherChannel {
+  height: 200px;
+}
+/* 发行商频道 */
+.channel-block {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.channels {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  transition: 0.5s ease;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.channel {
+  content: url("../img/content/publisher/ani-one-logo.png");
+  border-radius: 50%;
+  width: 11.5%;
+  height: width;
+  background-color: #fff;
+  margin-right: 10px;
+  box-sizing: border-box;
+  z-index: 12;
+}
+.channel:hover {
+  border: #00b4d8 2px solid;
+}
+.channel-btn {
+  position: absolute;
+  color: #fff;
+  background-color: #59d3eb;
+  height: 30%;
+  cursor: pointer;
+  width: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 11;
+  top: 40%;
+}
+.channel-right {
+  right: 0;
+}
 /* 响应式 */
 @media screen and (max-width: 1400px) {
   .hot-anime-card {

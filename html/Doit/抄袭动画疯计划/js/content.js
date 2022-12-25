@@ -154,5 +154,50 @@ $(document).ready(function () {
             }
         }
     }
-
+    /* 发行商频道 */
+    let channelLogoInfoArray=[
+        'ani-one-logo','anipass-logo','beast-kingdom-logo','dragon-art-logo','H2O-logo','jy-logo','kawa-logo','mighty-logo','muse-logo','nada-holdings-logo','pw-logo','T&M_logo','wan-mi-logo'
+    ]
+    for (let index = 0; index < channelLogoInfoArray.length; index++) {
+        $('.channel').eq(index).css('content','url("../img/content/publisher/'+channelLogoInfoArray[index]+'.png")')
+    }
+    /* 发行商频道浏览按钮 */
+    let whereAreYou=0;
+    $('.channel-left').click(function(){
+        whereAreYousValue(1)
+        $('.channels').css('transform','translateX(-'+whereAreYou+'px)');
+        whoShouldBeBlack()
+    })
+    $('.channel-right').click(function(){
+        whereAreYousValue(0)
+        $('.channels').css('transform','translateX(-'+whereAreYou+'px)');
+        whoShouldBeBlack()
+    })
+    whoShouldBeBlack();
+    function whereAreYousValue(f){
+        if(f==1){
+            whereAreYou-=400;
+            if (whereAreYou<=0) {
+                whereAreYou=0
+            }
+        }else{
+            whereAreYou+=400;
+            if (whereAreYou>1000) {
+                whereAreYou=1000
+            }
+        }
+    }
+    function whoShouldBeBlack(){
+        if (whereAreYou==0) {
+            $('.channel-left').css('background-color','rgba(50, 50, 50, 0.2)')
+        }else{
+            $('.channel-left').css('background-color','#59d3eb')
+        }
+        if (whereAreYou==1000) {
+            $('.channel-right').css('background-color','rgba(50, 50, 50, 0.2)')
+        }else{
+            $('.channel-right').css('background-color','#59d3eb')
+        }
+        
+    }
 })
