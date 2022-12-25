@@ -56,6 +56,7 @@ section p {
 .newanime-content {
   width: 15%;
   padding: 10px 8px 0px 8px;
+  animation: fadeInAnimation ease 1s;
 }
 .newanime-card {
   width: 100%;
@@ -63,6 +64,14 @@ section p {
   font-size: 0.8em;
   box-shadow: 0 0 6px 1px rgb(0 0 0 / 10%);
   border-radius: 8px;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .newanime-card:hover .newanime-card-img {
   transform: scale(1.1);
@@ -390,12 +399,18 @@ section p {
   .hot-anime-card {
     width: 20%;
   }
+  .news-card {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 768px) {
   .newanime-content {
     width: 30%;
   }
   .hot-anime-card {
+    width: 30%;
+  }
+  .news-card {
     width: 30%;
   }
 }
@@ -406,12 +421,18 @@ section p {
   .hot-anime-card {
     width: 45%;
   }
+  .news-card {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 400px) {
   .newanime-content {
     width: 80%;
   }
   .hot-anime-card {
+    width: 70%;
+  }
+  .news-card {
     width: 70%;
   }
 }
