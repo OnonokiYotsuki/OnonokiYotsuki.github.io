@@ -15,6 +15,9 @@ $(document).ready(function () {
     })
     /* 本季新番按热度排序 */
     $('.filter').click(function () {
+        /* 隐藏显示更多按钮 */
+        hideOrShowCard(0);
+        /* 开始排序 */
         var arr = [];
         for (var i = 0; i < $('.newanime-content').length-1; i++) {
             arr.push($('.newanime-content').eq(i));
@@ -25,6 +28,7 @@ $(document).ready(function () {
         for (var i = 0; i < arr.length; i++) {
             $(arr[i]).insertBefore($('.newanime-finalcard'));
         }
+        hideOrShowCard(1);
     })
     /* 添加本季新番卡片 */
     var newAnimeDataArray = [
@@ -157,14 +161,15 @@ $(document).ready(function () {
     hideOrShowCard(1);
     $('.showMoreBtn').click(function () {
         hideOrShowCard(0);
-        $('.showMoreBtn').hide();
     })
     function hideOrShowCard(f) {
         for (let index = 18; index <= $('.newanime-content').length; index++) {
             if (f == 1) {
                 $('.newanime-content').eq(index).hide();
+                $('.showMoreBtn').show();
             } else {
                 $('.newanime-content').eq(index).show();
+                $('.showMoreBtn').hide();
             }
         }
     }
@@ -235,8 +240,8 @@ $(document).ready(function () {
         { title: '【情報】《秋葉原冥途戰爭》「和平なごみ」、「萬年嵐子」PVC 商品化確定！', detail: '＝＝＝＝＝＝＝＝＝＝＝＝　 フィギュア化決定！＝＝＝＝＝＝＝＝＝＝＝＝秋葉原を舞台に”バッキュン”を繰り広げた「なごみ」', imgUrl: '' },
         { title: '【情報】 TYPE-MOON 官方釋出的《魔法使之夜》2022 年聖誕節賀圖！', detail: 'ハッピーメリークリスマス！聖なる夜に沢山の感謝を込めてhttps://twitter.com/TMitterOffici', imgUrl: '' }
     ]
-    giveNewsCardValue(0, aboutNewsInfoArray, 9);
-    function giveNewsCardValue(n, a, i) {
+    giveNewsCardValue(aboutNewsInfoArray);
+    function giveNewsCardValue(a) {
         for (let index = 0; index < 18; index++) {
             $('.news-img-block div').eq(index).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/content/news/' + a[index].title + '.jpg")')
             $('.news-content-title').eq(index).html(a[index].title)
