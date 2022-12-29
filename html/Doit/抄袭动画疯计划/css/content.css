@@ -116,6 +116,9 @@ section p {
   right: 5px;
   z-index: 1;
 }
+.newanime-card-sukied {
+  background: url("../img/content/like_active.svg");
+}
 .newanime-card-episode {
   display: flex;
   position: absolute;

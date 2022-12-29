@@ -19,7 +19,7 @@ $(document).ready(function () {
         hideOrShowCard(0);
         /* 开始排序 */
         var arr = [];
-        for (var i = 0; i < $('.newanime-content').length-1; i++) {
+        for (var i = 0; i < $('.newanime-content').length - 1; i++) {
             arr.push($('.newanime-content').eq(i));
         }
         arr.sort(function (a, b) {
@@ -66,7 +66,8 @@ $(document).ready(function () {
         { date: '2022-12-11', time: '17:00', episode: '10', watch: '131.4', name: '機動戰士鋼彈 水星的魔女' },
         { date: '2022-12-10', time: '22:00', episode: '12', watch: '71.2', name: '因為是反派大小姐所以養了魔王' },
         { date: '其他', time: '09:30', episode: '1', watch: '2.6', name: '電影版 奇巧計程車：撲朔謎林' },
-        { date: '其他', time: '11:00', episode: '1', watch: '0.91', name: '再見了，橡果兄弟！' },];
+        { date: '其他', time: '11:00', episode: '1', watch: '0.91', name: '再見了，橡果兄弟！' }
+    ];
     for (let i = 0; i < newAnimeDataArray.length; i++) {
         createNewAnimeCard();
         giveNewAnimeCardValue(i);
@@ -101,7 +102,7 @@ $(document).ready(function () {
     }
     function giveNewAnimeCardValue(i) {
         $('.newanime-card-time p').eq(i).html(newAnimeDataArray[i].time);
-        $('.newanime-card-episode p').eq(i).html('第'+newAnimeDataArray[i].episode+'集');
+        $('.newanime-card-episode p').eq(i).html('第' + newAnimeDataArray[i].episode + '集');
         $('.newanime-name p').eq(i).html(newAnimeDataArray[i].name);
         $('.newanime-watch p').eq(i).html(newAnimeDataArray[i].watch + '万');
         /* $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")') */
@@ -248,5 +249,33 @@ $(document).ready(function () {
             $('.news-content-detail').eq(index).html(a[index].detail)
         }
     }
+    /* 喜欢功能 */
+    console.log($('.newanime-card-suki'));
+    // 存储数据
+    /*    $('.newanime-card-suki').click(function (ev) {
+           console.log($(this).attr('class'));
+           if ($(this).attr('class') == 'newanime-card-suki') {
+               $(this).addClass('newanime-card-sukied')
+           } else { $(this).attr('class', 'newanime-card-suki') }
+           rememberSukiOrNot()
+           console.log(read('suki'));
+           ev.stopPropagation()
+           return false;
+       })
+       function rememberSukiOrNot() {
+           for (let index = 0; index < $('.newanime-card-suki').length; index++) {
+               if ($(this).attr('class') == 'newanime-card-suki newanime-card-sukied') {
+                   console.log('开始记录');
+                   let arr = [];
+                   let newArr = {};
+                   if (localStorage.suki != null) {
+                       arr = read('suki')
+                   }
+                   arr.push(index);
+                   save(suki, arr);
+               }
+           }
+       } */
+
 
 })
