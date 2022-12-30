@@ -10,7 +10,7 @@ $(function () {
                 if (arr[index].password == $('#inputPassword').val()) {
                     alert('登录成功！')
                     save('loggingAccountID', index)
-                    window.location.href = 'http://127.0.0.1:8011/html/Doit/抄袭动画疯计划/index.html';
+                    window.location.href = 'https://ononokiyotsuki.github.io/html/Doit/抄袭动画疯计划/index.html';
                     break;
                 } else {
                     alert('密码错误')

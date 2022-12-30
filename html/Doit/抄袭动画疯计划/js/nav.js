@@ -47,6 +47,12 @@ $(document).ready(function () {
       $('body').css('background-color', '#fff')
     }
   })
+  /* 账号登录 html/login.html" */
+  $('.top-right ul li:eq(4)').click(function () {
+    if (read('loggingAccountID') != null) {
+      window.location.href = "https://ononokiyotsuki.github.io/html/Doit/抄袭动画疯计划/html/profile.html"
+    } else { window.location.href = "https://ononokiyotsuki.github.io/html/Doit/抄袭动画疯计划/html/login.html" }
+  })
   /******************* 账号初始化 *******************/
   if (read('loggingAccountID') != null) {
     if (read('userInfo')[read('loggingAccountID')].headIcon != null) {
