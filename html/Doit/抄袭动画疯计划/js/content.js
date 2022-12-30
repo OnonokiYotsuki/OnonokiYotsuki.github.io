@@ -250,32 +250,33 @@ $(document).ready(function () {
         }
     }
     /* 喜欢功能 */
-    console.log($('.newanime-card-suki'));
-    // 存储数据
-    /*    $('.newanime-card-suki').click(function (ev) {
-           console.log($(this).attr('class'));
-           if ($(this).attr('class') == 'newanime-card-suki') {
-               $(this).addClass('newanime-card-sukied')
-           } else { $(this).attr('class', 'newanime-card-suki') }
-           rememberSukiOrNot()
-           console.log(read('suki'));
-           ev.stopPropagation()
-           return false;
-       })
-       function rememberSukiOrNot() {
-           for (let index = 0; index < $('.newanime-card-suki').length; index++) {
-               if ($(this).attr('class') == 'newanime-card-suki newanime-card-sukied') {
-                   console.log('开始记录');
-                   let arr = [];
-                   let newArr = {};
-                   if (localStorage.suki != null) {
-                       arr = read('suki')
-                   }
-                   arr.push(index);
-                   save(suki, arr);
-               }
-           }
-       } */
-
-
+    /* 初始化爱心 */
+    suki()
+    // 爱不爱心
+    $('.newanime-card-suki').click(function (ev) {
+        if ($(this).attr('class') == 'newanime-card-suki') {
+            $(this).addClass('newanime-card-sukied')
+        } else { $(this).attr('class', 'newanime-card-suki') }
+        rememberSukiOrNot()
+        ev.stopPropagation()
+        return false;
+    })
+    /* 记录爱心 */
+    function rememberSukiOrNot() {
+        let arr = [];
+        for (let index = 0; index < $('.newanime-card-suki').length; index++) {
+            if ($('.newanime-card-suki').eq(index).attr('class') == 'newanime-card-suki newanime-card-sukied') {
+                arr.push(index);
+            }
+        }
+        save('sukied', arr)
+    }
+    /* 添加爱心 */
+    function suki() {
+        for (let index = 0; index < $('.newanime-card-suki').length; index++) {
+            if ($.inArray(index, read('sukied')) !== -1) {
+                $('.newanime-card-suki').eq(index).attr('class', 'newanime-card-suki newanime-card-sukied')
+            }
+        }
+    }
 })

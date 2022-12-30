@@ -6,25 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .block {
-            width: 200px;
-            background-color: red;
-            height: 200px;
-            overflow: auto;
-        }
-
-        .pic {
-            width: 50%;
-            height: 1000px;
-        }
-    </style>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/localstorage.js"></script>
 </head>
 
 <body>
-    <div class="block">
-        <div class="pic">a</div>
-    </div>
+    <script>
+        $(function () {
+            let a = []
+            let b = [{ name: 'defy', psw: '123', suki: [1, 2, 3] }, { name: 'ononoki', psw: '123', suki: [4, 5, 6] }]
+            save('fuck', b)
+            console.log(read('fuck'));
+            a = read('fuck');
+            a[0].name = 'defff'
+            a[0].suki = [7, 8, 9]
+            save('fuck', a)
+            console.log(read('fuck'));
+        })
+    </script>
 </body>
 
 </html>
