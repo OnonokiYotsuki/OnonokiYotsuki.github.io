@@ -255,7 +255,7 @@ $(document).ready(function () {
         if ($(this).attr('class') == 'newanime-card-suki') {
             $(this).addClass('newanime-card-sukied')
         } else { $(this).attr('class', 'newanime-card-suki') }
-        if (read('loggingAccount') != null) { rememberSukiOrNot() } else {
+        if (read('loggingAccountID') != null) { rememberSukiOrNot() } else {
             alert('请先登录账号')
         }
         ev.stopPropagation()
@@ -269,18 +269,18 @@ $(document).ready(function () {
                 arr.push(index);
             }
         }
-        editKeyValue('loggingAccount', 'account', 'defy', 'suki', arr)
+        editKeyValue('userInfo', 'account', read('userInfo')[read('loggingAccountID')].account, 'suki', arr)
     }
     /* 添加爱心 */
     function suki() {
         for (let index = 0; index < $('.newanime-card-suki').length; index++) {
-            if ($.inArray(index, read('loggingAccount')[0].suki) !== -1) {
+            if ($.inArray(index, read('userInfo')[read('loggingAccountID')].suki) !== -1) {
                 $('.newanime-card-suki').eq(index).attr('class', 'newanime-card-suki newanime-card-sukied')
             }
         }
     }
     /******************* 账号初始化 *******************/
-    if (read('loggingAccount') != null) {
+    if (read('loggingAccountID') != null) {
         /* 初始化爱心 */
         suki();
     }

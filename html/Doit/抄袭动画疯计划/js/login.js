@@ -9,10 +9,7 @@ $(function () {
             if (arr[index].account == $('#inputAccount').val()) {
                 if (arr[index].password == $('#inputPassword').val()) {
                     alert('登录成功！')
-                    if (!Array.isArray(arr[index])) {
-                        arr[index] = [arr[index]];  // 将结果转换为数组
-                    }
-                    save('loggingAccount', arr[index])
+                    save('loggingAccountID', index)
                     window.location.href = 'http://127.0.0.1:8011/html/Doit/抄袭动画疯计划/index.html';
                     break;
                 } else {
@@ -47,9 +44,14 @@ $(function () {
             }
         }
         function goSave() {
+            newArr.id = arr.length;
             newArr.account = $('#inputAccount').val();
             newArr.password = $('#inputPassword').val();
-            newArr.id = arr.length;
+            if ($('#inputHeadIcon').val() != '') {
+                newArr.headIcon = $('#inputHeadIcon').val();
+            } else {
+                newArr.headIcon = 'https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/nav/pic_sun.svg'
+            }
             newArr.admin = 2;
             arr.push(newArr);
             save('userInfo', arr);

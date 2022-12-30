@@ -48,8 +48,9 @@ $(document).ready(function () {
     }
   })
   /******************* 账号初始化 *******************/
-  if (read('loggingAccount') != null) {
-    if (read('loggingAccount')[0].headIcon != null) { $('.top-right ul li:eq(4)').css('background-image', 'url(' + read('loggingAccount')[0].headIcon + ')') }
-
+  if (read('loggingAccountID') != null) {
+    if (read('userInfo')[read('loggingAccountID')].headIcon != null) {
+      $('.top-right ul li:eq(4)').css('background-image', 'url(' + read('userInfo')[read('loggingAccountID')].headIcon + ')')
+    }
   }
 })
