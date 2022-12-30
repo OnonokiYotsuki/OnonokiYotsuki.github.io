@@ -51,7 +51,10 @@ $(function () {
     })
     /* 清空账号 */
     $('#clear').click(function () {
-        clear();
+        clearItem('userInfo');
+    })
+    $('#removeUser').click(function () {
+        console.log(JSON.parse(localStorage.userInfo));
     })
     /* 查看所有账号 */
     $('#havealook').click(function () {
