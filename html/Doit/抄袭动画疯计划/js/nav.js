@@ -2,20 +2,20 @@ $(document).ready(function () {
   /* 响应式nav */
   let f = 0;
   let flag
-  if($('.menu-icon').css('display') == 'flex'){
+  if ($('.menu-icon').css('display') == 'flex') {
     $('.bottom').on('click', isBottom)
   }
   $(window).resize(function () {
     /* 大屏模式 */
-    if($('.menu-icon').css('display') == 'none') {
+    if ($('.menu-icon').css('display') == 'none') {
       $('.main-menu').css('display', 'flex');
       $('.bottom').off('click', isBottom)
-      flag=true;
+      flag = true;
     } /* 小屏模式 */
-    if($('.menu-icon').css('display') == 'flex'){
+    if ($('.menu-icon').css('display') == 'flex') {
       $('.bottom').on('click', isBottom)
       hideMenu(flag);
-      flag=false;
+      flag = false;
     }
   });
   function isBottom() {
@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
   };
   function hideMenu(a) {
-    if(a){
+    if (a) {
       $('.main-menu').css('display', 'none');
     }
   }
@@ -47,4 +47,9 @@ $(document).ready(function () {
       $('body').css('background-color', '#fff')
     }
   })
+  /******************* 账号初始化 *******************/
+  if (read('loggingAccount') != null) {
+    if (read('loggingAccount')[0].headIcon != null) { $('.top-right ul li:eq(4)').css('background-image', 'url(' + read('loggingAccount')[0].headIcon + ')') }
+
+  }
 })

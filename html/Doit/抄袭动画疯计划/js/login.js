@@ -1,5 +1,7 @@
 $(function () {
     /* 登录 */
+    let arrFirst = [{ id: 0, account: 'defy', password: 'asd', admin: 0, headIcon: 'https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/nav/defyhcb_s.png' }]
+    /* save('userInfo', arrFirst); */
     $('#login').click(function () {
         let arr = read('userInfo');
         let index = 0
@@ -7,6 +9,11 @@ $(function () {
             if (arr[index].account == $('#inputAccount').val()) {
                 if (arr[index].password == $('#inputPassword').val()) {
                     alert('登录成功！')
+                    if (!Array.isArray(arr[index])) {
+                        arr[index] = [arr[index]];  // 将结果转换为数组
+                    }
+                    save('loggingAccount', arr[index])
+                    window.location.href = 'http://127.0.0.1:8011/html/Doit/抄袭动画疯计划/index.html';
                     break;
                 } else {
                     alert('密码错误')
@@ -14,7 +21,7 @@ $(function () {
                 }
             }
         } if (index == arr.length) {
-            alert('查无此号')
+            alert('查无此号');
         }
     })
     /* 注册 */

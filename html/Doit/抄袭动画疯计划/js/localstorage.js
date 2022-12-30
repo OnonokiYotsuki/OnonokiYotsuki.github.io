@@ -8,6 +8,11 @@ function read(key) {
         return JSON.parse(localStorage[key]);
     }
 }
+function existOrNot(key, who) {
+    /* if (read(key).includes(5)) {
+    } */
+    console.log(read(key).includes(who));
+}
 /* 编辑key的值 修改key里面的数组当中name为who的数据,把which里的值改为val*/
 function editKeyValue(key, name, who, which, val) {
     let newArray = read(key).map(obj => {

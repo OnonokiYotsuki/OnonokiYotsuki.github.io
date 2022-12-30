@@ -15,7 +15,7 @@
         $(function () {
             let b = [{ name: 'defy', psw: '123', suki: [1, 2, 3] }, { name: 'ononoki', pwd: 'wasdwasd', suki: [4, 5, 6] }, { name: 'u828', psw: '123', suki: [4, 5, 6] }]
             save('fuck', b)
-            removeKeyValue('fuck', 'suki', [4, 5, 6])
+            editKeyValue('fuck', 'name', 'defy', 'suki', [1, 99, 3])
         })
     </script>
 </body>
