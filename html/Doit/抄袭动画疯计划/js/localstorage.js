@@ -29,7 +29,7 @@ function removeKeyValue(key, name, del) {
     save(key, newArray)
 }
 /* 清空 清空指定的key*/
-function clearItem(key) {
+function removeItem(key) {
     localStorage.removeItem(key);
 }
 /* 清空所有key */
