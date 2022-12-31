@@ -272,6 +272,24 @@ section p {
   border-radius: 8px;
   background-color: #fff;
 }
+.today-list {
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #e67600;
+}
+.today-list .day-title:after {
+  content: "今天";
+  display: block;
+  background-color: #e67600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 6px;
+  border-radius: 0 0 0 4px;
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
 .day-list:nth-of-type(1) {
   margin-left: 0;
 }

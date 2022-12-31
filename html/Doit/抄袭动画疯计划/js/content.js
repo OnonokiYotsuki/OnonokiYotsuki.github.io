@@ -114,6 +114,9 @@ $(document).ready(function () {
         $('.newanime-content').eq(i).attr("data-id", newAnimeDataArray[i].watch);
     }
     /* 设置周期表 */
+    const dayOfWeek = new Date().getDay() - 1;
+    console.log(dayOfWeek);
+    console.log()
     let programListArray = [
         { week: 1, time: '00:30', episode: '12', name: '彼得・格里爾的賢者時間 Super Extra' },
         { week: 1, time: '00:30', episode: '12', name: '彼得・格里爾的賢者時間 Super Extra' },
@@ -148,7 +151,6 @@ $(document).ready(function () {
         { week: 7, time: '17:00', episode: '11', name: '機動戰士鋼彈 水星的魔女' },
         { week: 7, time: '22:00', episode: '26', name: 'IDOLiSH7 - 偶像星願 - Third BEAT！' },
         { week: 7, time: '22:00', episode: '12', name: '夫婦以上，戀人未滿' }];
-    console.log(programListArray);
     /* 计数 */
     let weekArr = [];
     let temp = 0;
@@ -163,7 +165,6 @@ $(document).ready(function () {
             n = 1;
         }
     }
-    console.log($('.day-title'));
     /* 推送列表 */
     for (let index = 0; index < 7; index++) {
         for (let j = 0; j < weekArr[index]; j++) {
@@ -182,6 +183,7 @@ $(document).ready(function () {
         $('.day-anime-name').eq(index).html(programListArray[index].name)
         $('.day-anime-episode').eq(index).html('第' + programListArray[index].episode + '集')
     }
+    $('.day-list').eq(dayOfWeek).addClass('today-list')
     /* 添加近期热播卡片 */
     var recentHotAnimeDataArray = [
         { date: '2022/10', episode: '共11', watch: '95万', name: '入間同學入魔了！第三季' },
