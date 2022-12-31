@@ -220,6 +220,7 @@ section p {
   display: none;
   position: relative;
   animation: fadeInAnimation ease 1s;
+  overflow: hidden;
 }
 .program-list-hint {
   margin: 30px 0;
