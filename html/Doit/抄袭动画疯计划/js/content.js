@@ -6,11 +6,15 @@ $(document).ready(function () {
             $('.anime-menu .bbb').css('width', '70px')
             $('.switcher p:nth-child(2)').css('color', '#2e2f31');
             $('.switcher p:nth-child(1)').css('color', 'var(--text-secondary-color)');
+            $('.program-list-bblock').show();
+            $('.newanime-block').hide();
         } else {
             $('.anime-menu .bbb').css('left', '-9px')
             $('.anime-menu .bbb').css('width', '90px')
             $('.switcher p:nth-child(2)').css('color', 'var(--text-secondary-color)');
             $('.switcher p:nth-child(1)').css('color', '#2e2f31');
+            $('.program-list-bblock').hide();
+            $('.newanime-block').show();
         }
     })
     /* 本季新番按热度排序 */
@@ -108,6 +112,75 @@ $(document).ready(function () {
         /* $('.newanime-card-img').eq(i).css('background-image', 'url("../img/anime_card/anime_pic(' + i + ').jpg")') */
         $('.newanime-card-img').eq(i).css('background-image', 'url("https://raw.githubusercontent.com/OnonokiYotsuki/OnonokiYotsuki.github.io/main/html/Doit/抄袭动画疯计划/img/anime_card/anime_pic(' + i + ').jpg")')
         $('.newanime-content').eq(i).attr("data-id", newAnimeDataArray[i].watch);
+    }
+    /* 设置周期表 */
+    let programListArray = [
+        { week: 1, time: '00:30', episode: '12', name: '彼得・格里爾的賢者時間 Super Extra' },
+        { week: 1, time: '00:30', episode: '12', name: '彼得・格里爾的賢者時間 Super Extra' },
+        { week: 1, time: '01:00', episode: '4', name: '我與機器子' },
+        { week: 1, time: '18:00', episode: '10', name: '給不滅的你 第二季' },
+        { week: 1, time: '21:00', episode: '12', name: '菜鳥鍊金術師開店營業中' },
+        { week: 2, time: '00:30', episode: '13', name: 'BLEACH 死神 千年血戰篇' },
+        { week: 2, time: '01:30', episode: '12', name: '呆萌酷男孩' },
+        { week: 3, time: '00:00', episode: '11', name: '鏈鋸人' },
+        { week: 3, time: '22:30', episode: '13', name: '我想成為影之強者！' },
+        { week: 3, time: '22:30', episode: '12', name: '轉生就是劍' },
+        { week: 4, time: '00:00', episode: '12', name: '路人超能 100 第三季' },
+        { week: 4, time: '00:00', episode: '12', name: '不道德公會' },
+        { week: 4, time: '12:25', episode: '24', name: 'MUV-LUV ALTERNATIVE 第二季' },
+        { week: 4, time: '23:30', episode: '12', name: '書蟲公主' },
+        { week: 5, time: '01:30', episode: '11', name: '她來自煩星' },
+        { week: 5, time: '23:00', episode: '13', name: '我家師傅沒有尾巴' },
+        { week: 6, time: '01:25', episode: '12', name: '聖劍傳說 Legend of Mana - The Teardrop Crystal -' },
+        { week: 6, time: '02:25', episode: '24', name: '惑星公主蜥蜴騎士' },
+        { week: 6, time: '07:00', episode: '12', name: 'PUI PUI 天竺鼠車車 駕訓班篇' },
+        { week: 6, time: '17:30', episode: '126', name: '我的英雄學院 第六季' },
+        { week: 6, time: '20:25', episode: '12', name: '入間同學入魔了！第三季' },
+        { week: 6, time: '22:00', episode: '12', name: '點滿農民相關技能後，不知為何就變強了。' },
+        { week: 6, time: '22:00', episode: '12', name: '因為是反派大小姐所以養了魔王' },
+        { week: 6, time: '22:00', episode: '13', name: '被勇者隊伍開除的馭獸使，邂逅了最強種的貓耳少女' },
+        { week: 6, time: '23:00', episode: '25', name: 'SPY×FAMILY 間諜家家酒' },
+        { week: 7, time: '00:00', episode: '13', name: '後宮之烏' },
+        { week: 7, time: '00:30', episode: '12', name: '孤獨搖滾！' },
+        { week: 7, time: '01:00', episode: '12', name: '藍色監獄' },
+        { week: 7, time: '01:00', episode: '13', name: '烙印勇士 黃金時代篇 MEMORIAL EDITION' },
+        { week: 7, time: '05:00', episode: '23', name: '超人力霸王德卡' },
+        { week: 7, time: '17:00', episode: '11', name: '機動戰士鋼彈 水星的魔女' },
+        { week: 7, time: '22:00', episode: '26', name: 'IDOLiSH7 - 偶像星願 - Third BEAT！' },
+        { week: 7, time: '22:00', episode: '12', name: '夫婦以上，戀人未滿' }];
+    console.log(programListArray);
+    /* 计数 */
+    let weekArr = [];
+    let temp = 0;
+    let n = 0;
+    for (let index = 0; index < programListArray.length; index++) {
+        if (programListArray[index].week == temp + 1) {
+            n += 1
+            if (index == programListArray.length - 1) { weekArr.push(n); }
+        } else {
+            weekArr.push(n);
+            temp += 1;
+            n = 1;
+        }
+    }
+    console.log($('.day-title'));
+    /* 推送列表 */
+    for (let index = 0; index < 7; index++) {
+        for (let j = 0; j < weekArr[index]; j++) {
+            $(`.day-title`).eq(index).after(`
+                <a href="#" class="day-anime-info">
+                    <span class="day-anime-time"></span>
+                    <div class="day-anime-detail">
+                    <div class="day-anime-name"></div>
+                    <div class="day-anime-episode"></div>
+                    </div>
+                </a>`);
+        }
+    }
+    for (let index = 0; index < programListArray.length; index++) {
+        $('.day-anime-time').eq(index).html(programListArray[index].time)
+        $('.day-anime-name').eq(index).html(programListArray[index].name)
+        $('.day-anime-episode').eq(index).html('第' + programListArray[index].episode + '集')
     }
     /* 添加近期热播卡片 */
     var recentHotAnimeDataArray = [
@@ -252,10 +325,12 @@ $(document).ready(function () {
     /* 喜欢功能 */
     // 爱不爱心
     $('.newanime-card-suki').click(function (ev) {
-        if ($(this).attr('class') == 'newanime-card-suki') {
-            $(this).addClass('newanime-card-sukied')
-        } else { $(this).attr('class', 'newanime-card-suki') }
-        if (read('loggingAccountID') != null) { rememberSukiOrNot() } else {
+        if (read('loggingAccountID') != null) {
+            if ($(this).attr('class') == 'newanime-card-suki') {
+                $(this).addClass('newanime-card-sukied')
+            } else { $(this).attr('class', 'newanime-card-suki') }
+            rememberSukiOrNot()
+        } else {
             alert('请先登录账号')
         }
         ev.stopPropagation()

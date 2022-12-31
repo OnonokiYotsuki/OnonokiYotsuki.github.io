@@ -215,6 +215,85 @@ section p {
 .showMoreBtn:hover {
   background-color: #59d3eb;
 }
+/* 周期表 */
+.program-list-bblock {
+  display: none;
+  position: relative;
+  animation: fadeInAnimation ease 1s;
+}
+.program-list-hint {
+  margin: 30px 0;
+}
+.program-list-block {
+  margin: auto;
+  width: 83vw;
+  height: 561px;
+  overflow: auto;
+}
+.program-list-bblock:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 64px;
+  width: 100%;
+  z-index: 3;
+  background: linear-gradient(
+    0deg,
+    rgba(150, 150, 150, 0.1),
+    rgba(100, 100, 100, 0)
+  );
+  pointer-events: none;
+}
+.program-list {
+  align-items: flex-start;
+  display: flex;
+  width: 1550px;
+  margin: 0 4px 4px 4px;
+}
+.day-anime-time {
+  padding: 8px;
+  color: #00b4d8;
+  font-size: 14px;
+  line-height: 22px;
+}
+.day-anime-info {
+  padding: 12px 0;
+  display: flex;
+  border-bottom: 1px solid #d1d1d1;
+}
+.day-anime-info:last-of-type {
+  border-bottom: none;
+}
+.day-list {
+  margin-left: 10px;
+  padding: 8px 8px;
+  width: 331px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.day-list:nth-of-type(1) {
+  margin-left: 0;
+}
+.day-anime-detail {
+  padding: 8px;
+  width: 100%;
+}
+.day-anime-name {
+  color: #2e2f31;
+  font-size: 14px;
+  line-height: 22px;
+}
+.day-anime-name:hover {
+  color: #e67600;
+}
+.day-anime-episode {
+  color: rgba(46, 47, 49, 0.6);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: end;
+  letter-spacing: 1px;
+}
 /* 近期热播 */
 .recent-hot {
   margin-top: 100px;
