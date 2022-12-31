@@ -15,5 +15,5 @@ $(function () {
         alert('已退出账号！')
         window.location.href = 'https://ononokiyotsuki.github.io/html/Doit/抄袭动画疯计划/index.html';
     });
-    $('.profile-title').html(read('userInfo')[0].account + '的小屋')
+    $('.profile-title').html(read('userInfo')[read('loggingAccountID')].account + '的小屋')
 })
