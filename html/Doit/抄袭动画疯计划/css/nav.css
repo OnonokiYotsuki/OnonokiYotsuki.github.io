@@ -133,6 +133,8 @@ ul {
   width: 25px;
   margin-right: 10px;
   cursor: pointer;
+  background-position: center;
+  background-size: contain;
 }
 .top-right li a {
   display: block;
@@ -155,7 +157,7 @@ ul {
   background-image: url("../img/nav/navicon_notification.svg");
 }
 .top-right ul li:nth-child(5) {
-  background-image: url("../img/nav/none.gif");
+  background-image: url("../img/nav/defyhcb_s.png");
   background-position: center;
   border-radius: 50%;
   height: 35px;
