@@ -6,10 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(function () {
+            var canvas = $('#myCanvas')[0];
+            var context = canvas.getContext('2d');
+
+            var carX = 0; // 小车的初始位置
+            var carY = 100;
+
+            function drawCar() {
+                // 绘制小车
+                context.beginPath();
+                context.rect(carX, carY, 50, 30);
+                context.fillStyle = "red";
+                context.fill();
+                context.closePath();
+
+                // 绘制车轮
+                context.beginPath();
+                context.arc(carX + 10, carY + 30, 10, 0, Math.PI * 2, false);
+                context.arc(carX + 40, carY + 30, 10, 0, Math.PI * 2, false);
+                context.fillStyle = "black";
+                context.fill();
+                context.closePath();
+            }
+
+            function animate() {
+                // 擦除之前的图像
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+                // 移动小车
+                carX += 2;
+                if (carX > canvas.width) {
+                    carX = -50;
+                }
+
+                // 重新绘制小车
+                drawCar();
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+    </script>
 </head>
 
 <body>
-
+    <canvas id="myCanvas" width="1200" height="200"></canvas>
 </body>
 
 </html>
