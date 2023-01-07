@@ -196,7 +196,8 @@ section p {
   display: flex;
   align-items: center;
 }
-
+.newanime-finalcard {
+}
 .newanime-finalcard:hover .hole-f {
   transform: translateY(-100%);
 }
@@ -245,6 +246,7 @@ section p {
 }
 
 .showMoreBtn {
+  margin: auto;
   cursor: pointer;
   background-color: #00b4d8;
   box-shadow: 4px 0px 10px 3px rgba(150, 150, 150, 0.1);
@@ -603,7 +605,11 @@ section p {
     width: 30%;
   }
 }
-
+@media screen and (max-width: 1300px) {
+  .news-card {
+    width: calc(50% - 16px);
+  }
+}
 @media screen and (max-width: 768px) {
   .newanime-content {
     width: 30%;
@@ -616,6 +622,9 @@ section p {
   .news-card {
     width: 30%;
   }
+  .news-card {
+    width: calc(100% - 16px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -624,10 +633,6 @@ section p {
   }
 
   .hot-anime-card {
-    width: 45%;
-  }
-
-  .news-card {
     width: 45%;
   }
 }
