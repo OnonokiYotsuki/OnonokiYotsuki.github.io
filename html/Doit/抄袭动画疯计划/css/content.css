@@ -104,14 +104,19 @@ section p {
 .newanime-card-img {
   background-size: cover;
   background-position: center;
-  height: 140px;
   width: 100%;
   z-index: -1;
   max-width: 100%;
   max-height: 100%;
   transition: transform 0.5s;
 }
-
+.newanime-card-img:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
 .newanime-card-time {
   display: flex;
   position: absolute;
@@ -390,7 +395,6 @@ section p {
 .hot-anime-card {
   position: relative;
   width: 13%;
-  height: 350px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
@@ -417,7 +421,13 @@ section p {
   border-radius: 8px 8px 0 0;
   transition: all 0.3s ease-in-out;
 }
-
+.hot-anime-img:after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 150%;
+}
 .hot-anime-info {
   padding: 6px 8px 8px;
   background-color: #fff;
