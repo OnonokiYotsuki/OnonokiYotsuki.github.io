@@ -196,8 +196,6 @@ section p {
   display: flex;
   align-items: center;
 }
-.newanime-finalcard {
-}
 .newanime-finalcard:hover .hole-f {
   transform: translateY(-100%);
 }
