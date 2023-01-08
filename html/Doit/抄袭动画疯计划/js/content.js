@@ -8,6 +8,7 @@ $(document).ready(function () {
             $('.switcher p:nth-child(1)').css('color', 'var(--text-secondary-color)');
             $('.program-list-bblock').show();
             $('.newanime-block').hide();
+            $('.showMoreBtn').hide();
         } else {
             $('.anime-menu .bbb').css('left', '-9px')
             $('.anime-menu .bbb').css('width', '90px')
@@ -15,6 +16,7 @@ $(document).ready(function () {
             $('.switcher p:nth-child(1)').css('color', '#2e2f31');
             $('.program-list-bblock').hide();
             $('.newanime-block').show();
+            $('.showMoreBtn').show();
         }
     })
     /* 本季新番按热度排序 */
