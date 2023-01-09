@@ -1,0 +1,39 @@
+footer {
+    margin-top: 50px;
+    height: 100px;
+    background-color: #f6f6fa;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .footer-content {
+        font-size: 0.7rem;
+        line-height: 2;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .footer-text {
+        p {
+            width: 450px;
+        }
+
+        a {
+            color: #00b4d8;
+        }
+    }
+
+    .footer-topline {
+        width: 100%;
+        height: 2px;
+        background: #e6e6e6;
+        border-radius: 2px;
+    }
+}
