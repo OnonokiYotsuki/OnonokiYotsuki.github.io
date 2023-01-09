@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +11,23 @@
   margin-left: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   height: 90px;
   position: fixed;
   background-color: #fff;
   z-index: 1000000;
 }
-nav .top {
+
+.nav-block {
+  height: 90px;
+  width: 100%;
+}
+
+.top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +39,12 @@ nav .top {
           align-items: center;
   height: 54px;
 }
-nav .top .top-left {
+
+ul {
+  list-style: none;
+}
+
+.top-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,19 +52,19 @@ nav .top .top-left {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .top .top-left .logo img {
+.top-left .logo img {
   height: 37px;
 }
-nav .top .top-left .anime-search {
+.top-left .anime-search {
   width: 310px;
   position: relative;
   margin-left: 50px;
 }
-nav .top .top-left .anime-search .anime-search-input {
+.top-left .anime-search .anime-search-input {
   width: 300px;
   height: 30px;
 }
-nav .top .top-left .anime-search .anime-search-input input {
+.top-left .anime-search .anime-search-input input {
   border-radius: 8px;
   border: 1px solid #d1d1d1;
   height: 100%;
@@ -58,7 +74,7 @@ nav .top .top-left .anime-search .anime-search-input input {
   background-color: #f2f2f7;
   color: #2e2f31;
 }
-nav .top .top-left .anime-search .anime-search-input .anime-search-icon {
+.top-left .anime-search .anime-search-input .anime-search-icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
@@ -71,10 +87,11 @@ nav .top .top-left .anime-search .anime-search-input .anime-search-icon {
   padding: 3px 8px;
   cursor: pointer;
 }
-nav .top .top-left .anime-search .anime-search-input .anime-search-icon img {
+.top-left .anime-search .anime-search-input .anime-search-icon img {
   vertical-align: middle;
 }
-nav .top .top-right ul {
+
+.top-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,36 +99,36 @@ nav .top .top-right ul {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .top .top-right ul li:nth-child(1) {
+.top-right ul li:nth-child(1) {
   background-image: url("../img/nav/search-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: none;
   width: 20px;
 }
-nav .top .top-right ul li:nth-child(2) {
+.top-right ul li:nth-child(2) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-nav .top .top-right ul li:nth-child(3) {
+.top-right ul li:nth-child(3) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-nav .top .top-right ul li:nth-child(4) {
+.top-right ul li:nth-child(4) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-nav .top .top-right ul li:nth-child(5) {
+.top-right ul li:nth-child(5) {
   background-image: url("../img/nav/none.gif");
   background-position: center;
   border-radius: 50%;
   height: 35px;
   width: 35px;
 }
-nav .top .top-right ul li:nth-child(6) {
+.top-right ul li:nth-child(6) {
   background-image: url("../img/nav/baha_s.png");
   height: 35px;
   width: 35px;
   background-size: contain;
 }
-nav .top .top-right li {
+.top-right li {
   height: 25px;
   width: 25px;
   margin-right: 10px;
@@ -119,43 +136,56 @@ nav .top .top-right li {
   background-position: center;
   background-size: contain;
 }
-nav .top .top-right li a {
+.top-right li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-nav .bottom {
+
+.bottom {
   height: 35px;
   background-color: rgba(0, 180, 216, 0.8);
 }
-nav .bottom .container {
+.bottom .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   position: relative;
 }
-nav .bottom .container .main-menu {
+
+.main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav .bottom .container .main-menu li {
+.main-menu li {
   margin-right: 15px;
   height: 100%;
   line-height: 35px;
   padding: 0 10px;
 }
-nav .bottom .container .main-menu li:hover {
+.main-menu li:hover {
   background-color: #59d3eb;
 }
-nav .bottom .container .main-menu a {
+.main-menu a {
   color: #fff;
 }
-nav .bottom .container .main-menu .active {
+.main-menu .active {
   background-color: #e67600;
 }
-nav .bottom .container .dark_swift_button {
+
+.menu-icon {
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dark_swift_button {
   width: 50px;
   height: 25px;
   background-color: #ffffff;
@@ -168,10 +198,12 @@ nav .bottom .container .dark_swift_button {
   right: 0;
   top: 5px;
 }
-nav .bottom .container .dark_swift_button .oooo {
+
+.oooo {
   position: relative;
 }
-nav .bottom .container .dark_swift_button .oooo .moon {
+
+.moon {
   background-image: url("../img/nav/pic_moon.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -179,7 +211,8 @@ nav .bottom .container .dark_swift_button .oooo .moon {
   width: 52px;
   height: 26px;
 }
-nav .bottom .container .dark_swift_button .oooo .sun {
+
+.sun {
   position: absolute;
   background-image: url("../img/nav/pic_sun.svg");
   background-size: 18px 18px;
@@ -189,7 +222,8 @@ nav .bottom .container .dark_swift_button .oooo .sun {
   height: 26px;
   top: 0;
 }
-nav .bottom .container .dark_swift_button .oooo .radio {
+
+.radio {
   position: absolute;
   background-color: #d1d1d1;
   width: 18px;
@@ -199,28 +233,6 @@ nav .bottom .container .dark_swift_button .oooo .radio {
   left: 4px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
-nav .bottom .container .menu-icon {
-  display: none;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.nav-block {
-  height: 90px;
-  width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
@@ -238,6 +250,7 @@ a {
     display: none;
   }
 }
+/* 响应式 */
 @media (max-width: 810px) {
   .bottom {
     cursor: pointer;
