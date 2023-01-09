@@ -11,23 +11,14 @@
   margin-left: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* 导航栏 */
 nav {
   height: 90px;
   position: fixed;
   background-color: #fff;
   z-index: 1000000;
 }
-
-.nav-block {
-  height: 90px;
-  width: 100%;
-}
-
-.top {
+nav .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,12 +30,7 @@ nav {
           align-items: center;
   height: 54px;
 }
-
-ul {
-  list-style: none;
-}
-
-.top-left {
+nav .top .top-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,19 +38,19 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.top-left .logo img {
+nav .top .top-left .logo img {
   height: 37px;
 }
-.top-left .anime-search {
+nav .top .top-left .anime-search {
   width: 310px;
   position: relative;
   margin-left: 50px;
 }
-.top-left .anime-search .anime-search-input {
+nav .top .top-left .anime-search .anime-search-input {
   width: 300px;
   height: 30px;
 }
-.top-left .anime-search .anime-search-input input {
+nav .top .top-left .anime-search .anime-search-input input {
   border-radius: 8px;
   border: 1px solid #d1d1d1;
   height: 100%;
@@ -74,7 +60,7 @@ ul {
   background-color: #f2f2f7;
   color: #2e2f31;
 }
-.top-left .anime-search .anime-search-input .anime-search-icon {
+nav .top .top-left .anime-search .anime-search-input .anime-search-icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
@@ -87,11 +73,10 @@ ul {
   padding: 3px 8px;
   cursor: pointer;
 }
-.top-left .anime-search .anime-search-input .anime-search-icon img {
+nav .top .top-left .anime-search .anime-search-input .anime-search-icon img {
   vertical-align: middle;
 }
-
-.top-right ul {
+nav .top .top-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,36 +84,36 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.top-right ul li:nth-child(1) {
+nav .top .top-right ul li:nth-child(1) {
   background-image: url("../img/nav/search-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: none;
   width: 20px;
 }
-.top-right ul li:nth-child(2) {
+nav .top .top-right ul li:nth-child(2) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-.top-right ul li:nth-child(3) {
+nav .top .top-right ul li:nth-child(3) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-.top-right ul li:nth-child(4) {
+nav .top .top-right ul li:nth-child(4) {
   background-image: url("../img/nav/navicon_notification.svg");
 }
-.top-right ul li:nth-child(5) {
+nav .top .top-right ul li:nth-child(5) {
   background-image: url("../img/nav/none.gif");
   background-position: center;
   border-radius: 50%;
   height: 35px;
   width: 35px;
 }
-.top-right ul li:nth-child(6) {
+nav .top .top-right ul li:nth-child(6) {
   background-image: url("../img/nav/baha_s.png");
   height: 35px;
   width: 35px;
   background-size: contain;
 }
-.top-right li {
+nav .top .top-right li {
   height: 25px;
   width: 25px;
   margin-right: 10px;
@@ -136,56 +121,43 @@ ul {
   background-position: center;
   background-size: contain;
 }
-.top-right li a {
+nav .top .top-right li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-
-.bottom {
+nav .bottom {
   height: 35px;
   background-color: rgba(0, 180, 216, 0.8);
 }
-.bottom .container {
+nav .bottom .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   position: relative;
 }
-
-.main-menu {
+nav .bottom .container .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.main-menu li {
+nav .bottom .container .main-menu li {
   margin-right: 15px;
   height: 100%;
   line-height: 35px;
   padding: 0 10px;
 }
-.main-menu li:hover {
+nav .bottom .container .main-menu li:hover {
   background-color: #59d3eb;
 }
-.main-menu a {
+nav .bottom .container .main-menu a {
   color: #fff;
 }
-.main-menu .active {
+nav .bottom .container .main-menu .active {
   background-color: #e67600;
 }
-
-.menu-icon {
-  display: none;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.dark_swift_button {
+nav .bottom .container .dark_swift_button {
   width: 50px;
   height: 25px;
   background-color: #ffffff;
@@ -198,12 +170,10 @@ ul {
   right: 0;
   top: 5px;
 }
-
-.oooo {
+nav .bottom .container .dark_swift_button .oooo {
   position: relative;
 }
-
-.moon {
+nav .bottom .container .dark_swift_button .oooo .moon {
   background-image: url("../img/nav/pic_moon.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -211,8 +181,7 @@ ul {
   width: 52px;
   height: 26px;
 }
-
-.sun {
+nav .bottom .container .dark_swift_button .oooo .sun {
   position: absolute;
   background-image: url("../img/nav/pic_sun.svg");
   background-size: 18px 18px;
@@ -222,8 +191,7 @@ ul {
   height: 26px;
   top: 0;
 }
-
-.radio {
+nav .bottom .container .dark_swift_button .oooo .radio {
   position: absolute;
   background-color: #d1d1d1;
   width: 18px;
@@ -234,7 +202,32 @@ ul {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
+nav .bottom .container .menu-icon {
+  display: none;
+}
 
+/* 海报 */
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 用于修复nav position:fixed错误（撑起nav）。 */
+.nav-block {
+  height: 90px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 响应式 */
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px;
@@ -250,7 +243,6 @@ ul {
     display: none;
   }
 }
-/* 响应式 */
 @media (max-width: 810px) {
   .bottom {
     cursor: pointer;
