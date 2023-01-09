@@ -1,0 +1,711 @@
+$color_1: #2e2f31;
+$color_2: var(--text-secondary-color);
+$color_3: #fff;
+$color_4: #00b4d8;
+$color_5: #e67600;
+$color_6: rgba(46, 47, 49, 0.6);
+$color_7: #000;
+$background-color_1: #f6f6fa;
+$background-color_2: #d1d1d1;
+$background-color_3: rgb(42, 44, 44, 0.9);
+$background-color_4: #fff;
+$background-color_5: rgb(0, 180, 216, 0.8);
+$background-color_6: #00b4d8;
+$background-color_7: #59d3eb;
+$background-color_8: #e67600;
+$background-color_9: #eaeff0;
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: $background-color_1;
+
+    //内容区
+    section {
+        p {
+            color: $color_1;
+        }
+
+        //菜单
+        .anime-menu {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            //周期表切换
+            .switcher {
+                display: flex;
+                position: relative;
+                height: 50px;
+                align-items: center;
+                left: 30px;
+                font-size: 1.1rem;
+
+                p {
+                    cursor: pointer;
+                    margin-right: 20px;
+                }
+
+                p {
+                    &:nth-child(2) {
+                        color: $color_2;
+                    }
+                }
+
+                .bbb {
+                    background-color: $background-color_2;
+                    height: 45px;
+                    width: 90px;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 8px;
+                    top: 2px;
+                    left: -9px;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            //按照更新日排序
+            .filter {
+                cursor: pointer;
+                align-items: center;
+                display: flex;
+
+                img {
+                    height: 12px;
+                }
+            }
+        }
+
+        //主内容区
+        .main-content {
+
+            //本季新番
+            .newanime-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+
+                .newanime-content {
+                    padding: 10px 8px 0px 8px;
+                    animation: fadeInAnimation ease 1s;
+
+                    .newanime-card {
+                        width: 100%;
+                        position: relative;
+                        font-size: 0.8em;
+                        box-shadow: 0 0 6px 1px rgb(0 0 0 / 10%);
+                        border-radius: 8px;
+
+                        &:hover {
+                            .newanime-card-img {
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        .newanime-card-pic {
+                            overflow: hidden;
+                            border-radius: 8px 8px 0 0;
+
+                            p {
+                                color: $color_3;
+                            }
+
+                            .newanime-card-img {
+                                background-size: cover;
+                                background-position: center;
+                                width: 100%;
+                                z-index: -1;
+                                max-width: 100%;
+                                max-height: 100%;
+                                transition: transform 0.5s;
+
+                                &:after {
+                                    content: "";
+                                    position: relative;
+                                    display: block;
+                                    width: 100%;
+                                    padding-bottom: 56.25%;
+                                }
+                            }
+
+                            .newanime-card-time {
+                                display: flex;
+                                position: absolute;
+                                background-color: $background-color_3;
+                                border-radius: 4px;
+                                padding: 3px;
+                                left: 10px;
+                                top: 5px;
+                                z-index: 1;
+
+                                img {
+                                    content: url("../img/content/pic-clock.svg");
+                                    width: 16px;
+                                }
+                            }
+
+                            .newanime-card-episode {
+                                display: flex;
+                                position: absolute;
+                                bottom: 35px;
+                                left: 10px;
+
+                                img {
+                                    content: url("../img/content/pic-tv.svg");
+                                    width: 12px;
+                                }
+                            }
+                        }
+
+                        .newanime-card-name {
+                            display: flex;
+                            width: 100%;
+                            background-color: $background-color_4;
+                            justify-content: space-between;
+                            border-radius: 0 0 8px 8px;
+
+                            .newanime-name {
+                                height: 15px;
+                                padding: 3px;
+                                padding-left: 10px;
+                                flex: 1;
+                                overflow: hidden;
+                                border-radius: 0 0 8px 8px;
+
+                                p {
+                                    &:hover {
+                                        transform: translateX(-100%);
+                                    }
+
+                                    white-space: nowrap;
+                                    transition: transform 2s;
+                                }
+                            }
+
+                            .newanime-watch {
+                                img {
+                                    content: url("../img/content/pic-fire.svg");
+                                    width: 12px;
+                                }
+
+                                display: flex;
+                                align-items: center;
+                            }
+
+                        }
+                    }
+                }
+
+                .newanime-finalcard {
+                    &:hover {
+                        .hole-f {
+                            transform: translateY(-100%);
+                        }
+
+                        transform: scale(1.1);
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    .hole-a {
+                        background-color: $background-color_5;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: 8px;
+
+                        .hole-f {
+                            p {
+                                color: $color_3;
+                            }
+
+                            height: 100%;
+                            transition: all 1s ease-in-out;
+                            color: $color_3;
+                            height: 100%;
+
+                            .final-card-lastWords {
+                                height: 100%;
+                                padding: 10px;
+                            }
+
+                            .final-card {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                p {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //本季新番显示更多按钮
+            .showMoreBtn {
+                margin: auto;
+                cursor: pointer;
+                background-color: $background-color_6;
+                box-shadow: 4px 0px 10px 3px rgba(150, 150, 150, 0.1);
+                max-width: 400px;
+                width: calc(100% - 16px);
+                color: $color_3;
+                text-align: center;
+                margin-top: 50px;
+                line-height: 2.5;
+                font-size: 1.2rem;
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: $background-color_7;
+                }
+            }
+
+            //周期表
+            .program-list-bblock {
+                display: none;
+                position: relative;
+                animation: fadeInAnimation ease 1s;
+                overflow: hidden;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    height: 64px;
+                    width: 100%;
+                    z-index: 3;
+                    background: linear-gradient(0deg, rgba(150, 150, 150, 0.1), rgba(100, 100, 100, 0));
+                    pointer-events: none;
+                }
+
+                .program-list-hint {
+                    margin: 30px 0;
+                }
+
+                .program-list-block {
+                    margin: auto;
+                    height: 561px;
+                    overflow: auto;
+
+                    .program-list {
+                        align-items: flex-start;
+                        display: flex;
+                        width: 1550px;
+                        margin: 0 4px 4px 4px;
+
+                        .day-list {
+                            margin-left: 10px;
+                            padding: 8px 8px;
+                            width: 331px;
+                            border-radius: 8px;
+                            background-color: $background-color_4;
+
+                            &:nth-of-type(1) {
+                                margin-left: 0;
+                            }
+
+                            .day-anime-info {
+                                padding: 12px 0;
+                                display: flex;
+                                border-bottom: 1px solid #d1d1d1;
+
+                                &:last-of-type {
+                                    border-bottom: none;
+                                }
+
+                                .day-anime-time {
+                                    padding: 8px;
+                                    color: $color_4;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                }
+
+                                .day-anime-detail {
+                                    padding: 8px;
+                                    width: 100%;
+
+                                    .day-anime-name {
+                                        color: $color_1;
+                                        font-size: 14px;
+                                        line-height: 22px;
+
+                                        &:hover {
+                                            color: $color_5;
+                                        }
+                                    }
+
+                                    .day-anime-episode {
+                                        color: $color_6;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        text-align: end;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .today-list {
+                            position: relative;
+                            border-radius: 2px;
+                            border: 1px solid #e67600;
+
+                            .day-title {
+                                &:after {
+                                    content: "今天";
+                                    display: block;
+                                    background-color: $background-color_8;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    padding: 2px 6px;
+                                    border-radius: 0 0 0 4px;
+                                    color: $color_3;
+                                    font-size: 0.8em;
+                                    line-height: 1.6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //近期热播
+            .recent-hot {
+                margin-top: 100px;
+                margin-bottom: 100px;
+
+                .hot-anime {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    .hot-anime-card {
+                        position: relative;
+                        background-color: $background-color_4;
+                        border-radius: 8px;
+                        box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
+                        margin: 0 8px 30px;
+
+                        &:hover {
+                            .hot-anime-img {
+                                transform: scale(1.05);
+                            }
+                        }
+
+                        .hot-anime-pic {
+                            width: 100%;
+                            overflow: hidden;
+
+                            .hot-anime-img {
+                                background-image: url("../img/anime_card/hotAnime/anime_pic(0).jpg");
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 8px 8px 0 0;
+                                transition: all 0.3s ease-in-out;
+
+                                &:after {
+                                    content: "";
+                                    position: relative;
+                                    display: block;
+                                    width: 100%;
+                                    padding-bottom: 150%;
+                                }
+                            }
+                        }
+
+                        .hot-anime-info {
+                            padding: 6px 8px 8px;
+                            background-color: $background-color_4;
+                            color: $color_1;
+
+                            .hot-anime-name {
+                                font-size: 0.9rem;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+
+                            .hot-anime-information {
+                                justify-content: space-between;
+                                display: flex;
+                                align-items: center;
+
+                                i {
+                                    font-size: 0.6rem;
+                                    display: flex;
+                                }
+
+                                div {
+                                    background-color: $background-color_9;
+                                    padding: 4px;
+                                    border-radius: 4px;
+                                    font-size: 0.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //发行商频道
+            .PublisherChannel {
+                height: 200px;
+                margin-bottom: 300px;
+
+                .channel-block {
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    .channels {
+                        height: 100%;
+                        width: 100%;
+                        white-space: nowrap;
+                        transition: 0.5s ease;
+                        padding-left: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        .channel {
+                            content: url("../img/content/publisher/ani-one-logo.png");
+                            border-radius: 50%;
+                            width: 11.8%;
+                            height: width;
+                            background-color: $background-color_4;
+                            margin-right: 10px;
+                            box-sizing: border-box;
+                            z-index: 12;
+
+                            &:hover {
+                                border: #00b4d8 2px solid;
+                            }
+                        }
+
+                        .channel-btn {
+                            position: absolute;
+                            color: $color_3;
+                            background-color: $background-color_7;
+                            height: 60px;
+                            cursor: pointer;
+                            width: 1.5%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 4px;
+                            z-index: 13;
+                            top: 40%;
+                        }
+
+                        .channel-right {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        //相关话题和热门话题
+        .aboutNews {
+            .Newstitle {
+                margin-top: 40px;
+                display: flex;
+
+                a {
+                    margin-left: 10px;
+                    display: flex;
+                    line-height: 2.5;
+                    color: $color_4;
+
+                    p {
+                        color: $color_4;
+                        font-weight: bolder;
+                    }
+                }
+            }
+
+            .news-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                .news-card {
+                    color: $color_7;
+
+                    height: 156px;
+                    background-color: $background-color_4;
+                    display: flex;
+                    border-radius: 4px;
+                    margin: 10px 0;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 2px rgba(150, 150, 150, 0.1);
+
+                    &:hover {
+                        .news-img-block {
+                            div {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    .news-img-block {
+                        width: 30%;
+                        height: 100%;
+                        overflow: hidden;
+
+                        div {
+                            height: inherit;
+                            transition-duration: 500ms;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    }
+
+                    .news-content-text-area {
+                        width: 70%;
+                        height: 100%;
+                        padding: 16px 8px 8px 16px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .news-content-detail {
+                            padding: 12px 5px;
+                            color: $color_6;
+                            overflow: hidden;
+                            height: 69px;
+                            line-height: 1;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* 全局 */
+.newanime-card-suki {
+    position: absolute;
+    background: url("../img/content/like_default.svg");
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    z-index: 1;
+}
+
+.newanime-card-sukied {
+    background: url("../img/content/like_active.svg");
+}
+
+.titleOne {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+/* 响应式布局 */
+@media screen and(min-width: 1300px) {
+    .newanime-content {
+        width: 15%;
+    }
+
+    .news-card {
+        width: 30%;
+        width: calc(50% - 16px);
+    }
+
+    .hot-anime-card {
+        width: 13%;
+    }
+
+    .news-card {
+        width: 30%;
+        width: calc(30% - 16px);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .newanime-content {
+        width: 18%;
+    }
+
+    .hot-anime-card {
+        width: 15%;
+    }
+
+    .news-card {
+        width: 30%;
+        width: calc(50% - 16px);
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .hot-anime-card {
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .newanime-content {
+        width: 22.7%;
+    }
+
+    .hot-anime-card {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newanime-content {
+        width: 30%;
+    }
+
+    .hot-anime-card {
+        width: 30%;
+    }
+
+    .news-card {
+        width: 30%;
+        width: calc(100% - 16px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .newanime-content {
+        width: 45%;
+    }
+
+    .hot-anime-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .newanime-content {
+        width: 80%;
+    }
+
+    .hot-anime-card {
+        width: 70%;
+    }
+
+    .news-card {
+        width: 70%;
+    }
+}

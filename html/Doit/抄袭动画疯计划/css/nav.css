@@ -1,10 +1,16 @@
 @charset "UTF-8";
+/* 响应式 */
 * {
   margin: 0;
   padding: 0;
 }
 
-.container,
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container-fluid {
   width: 100%;
   margin-right: auto;
@@ -21,22 +27,16 @@ nav {
   background-color: #fff;
   z-index: 1000000;
 }
-
-.nav-block {
-  height: 90px;
-  width: 100%;
-}
-
-.top {
+nav .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 54px;
 }
 
@@ -49,8 +49,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .top-left .logo img {
   height: 37px;
@@ -76,7 +76,7 @@ ul {
 }
 .top-left .anime-search .anime-search-input .anime-search-icon {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -96,8 +96,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .top-right ul li:nth-child(1) {
   background-image: url("../img/nav/search-icon.svg");
@@ -235,6 +235,11 @@ ul {
   transition: all 0.5s ease 0s;
 }
 
+.nav-block {
+  height: 90px;
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px;
@@ -250,7 +255,6 @@ ul {
     display: none;
   }
 }
-/* 响应式 */
 @media (max-width: 810px) {
   .bottom {
     cursor: pointer;
@@ -260,11 +264,11 @@ ul {
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
     display: none;
     background-color: rgba(0, 180, 216, 0.9);
@@ -280,7 +284,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
