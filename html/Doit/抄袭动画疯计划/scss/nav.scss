@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    height: 90px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1000000;
+}
+
+.nav-block {
+    height: 90px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+        img {
+            height: 37px;
+        }
+    }
+
+    .anime-search {
+        width: 310px;
+        position: relative;
+        margin-left: 12px;
+
+        .anime-search-input {
+            width: 300px;
+            height: 30px;
+
+
+            input {
+                border-radius: 8px;
+                border: 1px solid #d1d1d1;
+                height: 100%;
+                width: 100%;
+                outline: 0;
+                padding-left: 8px;
+                background-color: #f2f2f7;
+                color: #2e2f31;
+            }
+
+            .anime-search-icon {
+                box-sizing: border-box;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 32px;
+                background-color: #fff;
+                border: 1px solid #d1d1d1;
+                border-radius: 0 8px 8px 0;
+                padding: 3px 8px;
+                cursor: pointer;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.top-right {
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            &:nth-child(1) {
+                background-image: url("../img/nav/search-icon.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                display: none;
+                width: 20px;
+            }
+
+            &:nth-child(2) {
+                background-image: url("../img/nav/navicon_notification.svg");
+            }
+
+            &:nth-child(3) {
+                background-image: url("../img/nav/navicon_notification.svg");
+            }
+
+            &:nth-child(4) {
+                background-image: url("../img/nav/navicon_notification.svg");
+            }
+
+            &:nth-child(5) {
+                background-image: url("../img/nav/none.gif");
+                background-position: center;
+                border-radius: 50%;
+                height: 35px;
+                width: 35px;
+            }
+
+            &:nth-child(6) {
+                background-image: url("../img/nav/baha_s.png");
+                height: 35px;
+                width: 35px;
+                background-size: contain;
+            }
+        }
+    }
+
+    li {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-position: center;
+        background-size: contain;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.bottom {
+    height: 35px;
+    background-color: rgba(0, 180, 216, 0.8);
+
+    .container {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.main-menu {
+    display: flex;
+
+    li {
+        margin-right: 15px;
+        height: 100%;
+        line-height: 35px;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: #59d3eb;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .active {
+        background-color: #e67600;
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dark_swift_button {
+    width: 50px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.oooo {
+    position: relative;
+}
+
+.moon {
+    background-image: url("../img/nav/pic_moon.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 2px;
+    width: 52px;
+    height: 26px;
+}
+
+.sun {
+    position: absolute;
+    background-image: url("../img/nav/pic_sun.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 28px;
+    width: 52px;
+    height: 26px;
+    top: 0;
+}
+
+.radio {
+    position: absolute;
+    background-color: #d1d1d1;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 615px) {
+    .top-right ul li:nth-child(1) {
+        display: flex;
+    }
+
+    .anime-search {
+        display: none;
+    }
+}
+
+/* 响应式 */
+@media (max-width: 810px) {
+    .bottom {
+        cursor: pointer;
+    }
+
+    .main-menu {
+        top: 35px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        display: none;
+        background-color: rgba(0, 180, 216, 0.9);
+    }
+
+    .main-menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: #d1d1d1 1px solid;
+    }
+
+    .menu-icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

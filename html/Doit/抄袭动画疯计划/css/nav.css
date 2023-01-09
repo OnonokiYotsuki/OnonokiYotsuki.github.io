@@ -1,67 +1,110 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
+
 .container,
 .container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1600px;
-  }
-}
+
 a {
   text-decoration: none;
 }
+
 nav {
   height: 90px;
   position: fixed;
   background-color: #fff;
   z-index: 1000000;
 }
+
 .nav-block {
   height: 90px;
   width: 100%;
 }
+
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 54px;
 }
+
 ul {
   list-style: none;
 }
+
 .top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .top-left .logo img {
   height: 37px;
 }
-.top-right ul {
-  display: flex;
+.top-left .anime-search {
+  width: 310px;
+  position: relative;
+  margin-left: 12px;
 }
-.top-right li {
-  height: 25px;
-  width: 25px;
-  margin-right: 10px;
-  cursor: pointer;
-  background-position: center;
-  background-size: contain;
+.top-left .anime-search .anime-search-input {
+  width: 300px;
+  height: 30px;
 }
-.top-right li a {
-  display: block;
-  width: 100%;
+.top-left .anime-search .anime-search-input input {
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
   height: 100%;
+  width: 100%;
+  outline: 0;
+  padding-left: 8px;
+  background-color: #f2f2f7;
+  color: #2e2f31;
+}
+.top-left .anime-search .anime-search-input .anime-search-icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 0 8px 8px 0;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.top-left .anime-search .anime-search-input .anime-search-icon img {
+  vertical-align: middle;
+}
+
+.top-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .top-right ul li:nth-child(1) {
   background-image: url("../img/nav/search-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: none;
+  width: 20px;
 }
 .top-right ul li:nth-child(2) {
   background-image: url("../img/nav/navicon_notification.svg");
@@ -85,21 +128,36 @@ ul {
   width: 35px;
   background-size: contain;
 }
-/* 第二栏 */
+.top-right li {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-size: contain;
+}
+.top-right li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .bottom {
   height: 35px;
   background-color: rgba(0, 180, 216, 0.8);
 }
 .bottom .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
   position: relative;
 }
+
 .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-}
-.menu-icon {
-  display: none;
 }
 .main-menu li {
   margin-right: 15px;
@@ -107,35 +165,44 @@ ul {
   line-height: 35px;
   padding: 0 10px;
 }
+.main-menu li:hover {
+  background-color: #59d3eb;
+}
 .main-menu a {
   color: #fff;
 }
 .main-menu .active {
   background-color: #e67600;
 }
-.main-menu li:hover {
-  background-color: #59d3eb;
+
+.menu-icon {
+  display: none;
 }
+
 .banner {
   width: 100%;
   height: auto;
   display: block;
 }
-/* 暗黑模式切换 */
+
 .dark_swift_button {
   width: 50px;
   height: 25px;
   background-color: #ffffff;
   border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   position: absolute;
   right: 0;
   top: 5px;
 }
+
 .oooo {
   position: relative;
 }
+
 .moon {
   background-image: url("../img/nav/pic_moon.svg");
   background-size: 18px 18px;
@@ -144,6 +211,7 @@ ul {
   width: 52px;
   height: 26px;
 }
+
 .sun {
   position: absolute;
   background-image: url("../img/nav/pic_sun.svg");
@@ -154,6 +222,7 @@ ul {
   height: 26px;
   top: 0;
 }
+
 .radio {
   position: absolute;
   background-color: #d1d1d1;
@@ -162,40 +231,22 @@ ul {
   border-radius: 50%;
   top: 4px;
   left: 4px;
+  -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
-/* 搜索框 */
-.anime_search {
-  position: relative;
-  width: 300px;
-  height: 30px;
-  margin-left: 40px;
-}
-.anime_search input {
-  border-radius: 8px;
-  border: 1px solid #d1d1d1;
-  height: 32px;
-  width: 81%;
-  padding-left: 8px;
-  padding-right: 40px;
-  background-color: #f2f2f7;
-  color: #2e2f31;
-}
-.anime_search_icon {
-  background-color: #ffffff;
-  border: 1px solid #d1d1d1;
-  border-radius: 0 8px 8px 0;
-  padding: 5px 8px;
-  cursor: pointer;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
 }
 @media (max-width: 615px) {
   .top-right ul li:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-  .anime_search {
+  .anime-search {
     display: none;
   }
 }
@@ -207,8 +258,13 @@ ul {
   .main-menu {
     top: 35px;
     position: absolute;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     display: none;
     background-color: rgba(0, 180, 216, 0.9);
@@ -220,7 +276,11 @@ ul {
   }
   .menu-icon {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

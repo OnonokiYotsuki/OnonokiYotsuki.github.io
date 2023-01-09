@@ -1,1 +1,305 @@
-body{min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#222;background:-webkit-gradient(linear, right top, left bottom, from(#2a2a2a), to(#1a1a1a));background:linear-gradient(to bottom left, #2a2a2a, #1a1a1a);font-family:system-ui}.keyborad{--radius: 4vmin;--red: rgb(255, 100, 100);--green: rgb(100, 200, 100);--blue: rgb(100, 100, 255);background-color:#111;padding:2vmin;border-radius:var(--radius);-webkit-box-shadow:0 4vmin #0b0b0b,-2vmin 5vmin 4vmin #0a0a0a;box-shadow:0 4vmin #0b0b0b,-2vmin 5vmin 4vmin #0a0a0a;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box}.keyborad:after{content:"";height:100vh;width:1.2vw;bottom:100%;position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background:-webkit-gradient(linear, right top, left top, from(#111), color-stop(#222), color-stop(#111), to(#111));background:linear-gradient(to left, #111, #222, #111, #111);-webkit-box-shadow:-0.4vmin 0 1vmin #111;box-shadow:-0.4vmin 0 1vmin #111}.keyborad:before{content:"@andreuscafe";position:absolute;top:calc(100% + 1.2vmin);left:0;width:100%;text-align:center;color:#3a3a3a;font-size:1.5vmin}.keyborad .keyboadr-inner{display:-webkit-box;display:-ms-flexbox;display:flex;gap:1vmin;padding:.75vmin 1vmin 1vmin;overflow:hidden;background-color:#222;border-radius:calc(var(--radius)*.5);-webkit-box-shadow:0 .5vmin #000 inset;box-shadow:0 .5vmin #000 inset}.keyborad .keyboadr-inner .key{width:10vmin;height:9vmin;padding:.6vmin .6vmin .9vmin;top:.5vmin;position:relative;overflow:hidden;border-radius:calc(var(--radius)*.5);-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-animation:shadow 5s -0.5s linear infinite;animation:shadow 5s -0.5s linear infinite;--delay: 0}.keyborad .keyboadr-inner .key:nth-child(1n+1){--delay: 0.2s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+1) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+2){--delay: 0.4s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+2) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+3){--delay: 0.6s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+3) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+4){--delay: 0.8s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+4) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+5){--delay: 1s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+5) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+6){--delay: 1.2s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+6) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+7){--delay: 1.4s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+7) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+8){--delay: 1.6s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+8) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+9){--delay: 1.8s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+9) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+10){--delay: 2s;-webkit-animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite;animation:shadow 5s calc(-0.5s + var(--delay)) linear infinite}.keyborad .keyboadr-inner .key:nth-child(1n+10) .key-cotnent{-webkit-animation:color 5s calc(-0.5s + var(--delay)) linear infinite;animation:color 5s calc(-0.5s + var(--delay)) linear infinite}@-webkit-keyframes shadow{0%{-webkit-box-shadow:0 0 5vmin -2vmin var(--red);box-shadow:0 0 5vmin -2vmin var(--red)}33%{-webkit-box-shadow:0 0 5vmin -2vmin var(--blue);box-shadow:0 0 5vmin -2vmin var(--blue)}66%{-webkit-box-shadow:0 0 5vmin -2vmin var(--green);box-shadow:0 0 5vmin -2vmin var(--green)}100%{-webkit-box-shadow:0 0 5vmin -2vmin var(--red);box-shadow:0 0 5vmin -2vmin var(--red)}}@keyframes shadow{0%{-webkit-box-shadow:0 0 5vmin -2vmin var(--red);box-shadow:0 0 5vmin -2vmin var(--red)}33%{-webkit-box-shadow:0 0 5vmin -2vmin var(--blue);box-shadow:0 0 5vmin -2vmin var(--blue)}66%{-webkit-box-shadow:0 0 5vmin -2vmin var(--green);box-shadow:0 0 5vmin -2vmin var(--green)}100%{-webkit-box-shadow:0 0 5vmin -2vmin var(--red);box-shadow:0 0 5vmin -2vmin var(--red)}}.keyborad .keyboadr-inner .key:before{content:"";width:400vmin;height:400vmin;position:absolute;top:150%;left:150%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);background:conic-gradient(var(--red), var(--green), var(--blue), var(--red));-webkit-animation:spin 5s var(--delay) linear infinite;animation:spin 5s var(--delay) linear infinite}@-webkit-keyframes spin{from{-webkit-transform:translate(-50%, -50%) rotate(0deg);transform:translate(-50%, -50%) rotate(0deg)}to{-webkit-transform:translate(-50%, -50%) rotate(360deg);transform:translate(-50%, -50%) rotate(360deg)}}@keyframes spin{from{-webkit-transform:translate(-50%, -50%) rotate(0deg);transform:translate(-50%, -50%) rotate(0deg)}to{-webkit-transform:translate(-50%, -50%) rotate(360deg);transform:translate(-50%, -50%) rotate(360deg)}}.keyborad .keyboadr-inner .key .key-cotnent{width:100%;height:100%;background-color:#111;position:relative;border-radius:calc(var(--radius)*.4);font-size:3vmin;top:-0.3vmin;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff;z-index:1;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 .6vmin rgba(0,0,0,.6);box-shadow:0 .6vmin rgba(0,0,0,.6);-webkit-transition:top .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;transition:top .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out;transition:top .1s ease-in-out,box-shadow .1s ease-in-out,background-color .1s ease-in-out;transition:top .1s ease-in-out,box-shadow .1s ease-in-out,background-color .1s ease-in-out,-webkit-box-shadow .1s ease-in-out}.keyborad .keyboadr-inner .key .key-cotnent:active{top:0vmin;-webkit-box-shadow:0 .3vmin rgba(0,0,0,.6);box-shadow:0 .3vmin rgba(0,0,0,.6);background-color:rgba(17,17,17,.9)}@-webkit-keyframes color{0%{color:var(--red)}33%{color:var(--blue)}66%{color:var(--green)}100%{color:var(--red)}}@keyframes color{0%{color:var(--red)}33%{color:var(--blue)}66%{color:var(--green)}100%{color:var(--red)}}
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #222;
+  background: -webkit-gradient(linear, right top, left bottom, from(#2a2a2a), to(#1a1a1a));
+  background: linear-gradient(to bottom left, #2a2a2a, #1a1a1a);
+  font-family: system-ui;
+}
+
+.keyborad {
+  --radius: 4vmin;
+  --red: rgb(255, 100, 100);
+  --green: rgb(100, 200, 100);
+  --blue: rgb(100, 100, 255);
+  background-color: #111;
+  padding: 2vmin;
+  border-radius: var(--radius);
+  -webkit-box-shadow: 0 4vmin #0b0b0b, -2vmin 5vmin 4vmin #0a0a0a;
+          box-shadow: 0 4vmin #0b0b0b, -2vmin 5vmin 4vmin #0a0a0a;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.keyborad:after {
+  content: "";
+  height: 100vh;
+  width: 1.2vw;
+  bottom: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, right top, left top, from(#111), color-stop(#222), color-stop(#111), to(#111));
+  background: linear-gradient(to left, #111, #222, #111, #111);
+  -webkit-box-shadow: -0.4vmin 0 1vmin #111;
+          box-shadow: -0.4vmin 0 1vmin #111;
+}
+.keyborad:before {
+  content: "@andreuscafe";
+  position: absolute;
+  top: calc(100% + 1.2vmin);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 1.5vmin;
+}
+.keyborad .keyboadr-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vmin;
+  padding: 0.75vmin 1vmin 1vmin;
+  overflow: hidden;
+  background-color: #222;
+  border-radius: calc(var(--radius) * 0.5);
+  -webkit-box-shadow: 0 0.5vmin rgb(0, 0, 0) inset;
+          box-shadow: 0 0.5vmin rgb(0, 0, 0) inset;
+}
+.keyborad .keyboadr-inner .key {
+  width: 10vmin;
+  height: 9vmin;
+  padding: 0.6vmin 0.6vmin 0.9vmin;
+  top: 0.5vmin;
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius) * 0.5);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-animation: shadow 5s -0.5s linear infinite;
+          animation: shadow 5s -0.5s linear infinite;
+  --delay: 0;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+1) {
+  --delay: 0.2s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+1) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+2) {
+  --delay: 0.4s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+2) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+3) {
+  --delay: 0.6s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+3) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+4) {
+  --delay: 0.8s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+4) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+5) {
+  --delay: 1s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+5) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+6) {
+  --delay: 1.2s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+6) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+7) {
+  --delay: 1.4s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+7) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+8) {
+  --delay: 1.6s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+8) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+9) {
+  --delay: 1.8s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+9) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+10) {
+  --delay: 2s;
+  -webkit-animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: shadow 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+.keyborad .keyboadr-inner .key:nth-child(1n+10) .key-cotnent {
+  -webkit-animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+          animation: color 5s calc(-0.5s + var(--delay)) linear infinite;
+}
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--red);
+            box-shadow: 0 0 5vmin -2vmin var(--red);
+  }
+  33% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--blue);
+            box-shadow: 0 0 5vmin -2vmin var(--blue);
+  }
+  66% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--green);
+            box-shadow: 0 0 5vmin -2vmin var(--green);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--red);
+            box-shadow: 0 0 5vmin -2vmin var(--red);
+  }
+}
+@keyframes shadow {
+  0% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--red);
+            box-shadow: 0 0 5vmin -2vmin var(--red);
+  }
+  33% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--blue);
+            box-shadow: 0 0 5vmin -2vmin var(--blue);
+  }
+  66% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--green);
+            box-shadow: 0 0 5vmin -2vmin var(--green);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 5vmin -2vmin var(--red);
+            box-shadow: 0 0 5vmin -2vmin var(--red);
+  }
+}
+.keyborad .keyboadr-inner .key:before {
+  content: "";
+  width: 400vmin;
+  height: 400vmin;
+  position: absolute;
+  top: 150%;
+  left: 150%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: conic-gradient(var(--red), var(--green), var(--blue), var(--red));
+  -webkit-animation: spin 5s var(--delay) linear infinite;
+          animation: spin 5s var(--delay) linear infinite;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.keyborad .keyboadr-inner .key .key-cotnent {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  position: relative;
+  border-radius: calc(var(--radius) * 0.4);
+  font-size: 3vmin;
+  top: -0.3vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: 0 0.6vmin rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0.6vmin rgba(0, 0, 0, 0.6);
+  -webkit-transition: top 0.1s ease-in-out, background-color 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  transition: top 0.1s ease-in-out, background-color 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+.keyborad .keyboadr-inner .key .key-cotnent:active {
+  top: 0vmin;
+  -webkit-box-shadow: 0 0.3vmin rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0.3vmin rgba(0, 0, 0, 0.6);
+  background-color: rgba(17, 17, 17, 0.9);
+}
+@-webkit-keyframes color {
+  0% {
+    color: var(--red);
+  }
+  33% {
+    color: var(--blue);
+  }
+  66% {
+    color: var(--green);
+  }
+  100% {
+    color: var(--red);
+  }
+}
+@keyframes color {
+  0% {
+    color: var(--red);
+  }
+  33% {
+    color: var(--blue);
+  }
+  66% {
+    color: var(--green);
+  }
+  100% {
+    color: var(--red);
+  }
+}
