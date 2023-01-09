@@ -25,6 +25,7 @@ $background-color_9: #eaeff0;
     }
 }
 
+
 body {
     background-color: $background-color_1;
 
@@ -617,6 +618,11 @@ body {
     font-size: 1.4rem;
     margin-bottom: 30px;
 }
+
+* {
+    text-decoration: none;
+}
+
 
 /* 响应式布局 */
 @media screen and(min-width: 1300px) {
