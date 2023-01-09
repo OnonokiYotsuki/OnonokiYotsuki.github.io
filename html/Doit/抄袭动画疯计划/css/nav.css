@@ -17,6 +17,8 @@ nav {
   position: fixed;
   background-color: #fff;
   z-index: 1000000;
+  /* 顶层 */
+  /* 下层 */
 }
 nav .top {
   display: -webkit-box;
@@ -29,6 +31,8 @@ nav .top {
       -ms-flex-align: center;
           align-items: center;
   height: 54px;
+  /* 顶层左边 */
+  /* 顶层有边 */
 }
 nav .top .top-left {
   display: -webkit-box;
@@ -37,6 +41,8 @@ nav .top .top-left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* LOGO */
+  /* 搜索框 */
 }
 nav .top .top-left .logo img {
   height: 37px;
@@ -76,6 +82,9 @@ nav .top .top-left .anime-search .anime-search-input .anime-search-icon {
 nav .top .top-left .anime-search .anime-search-input .anime-search-icon img {
   vertical-align: middle;
 }
+nav .top .top-right {
+  /* 选单 */
+}
 nav .top .top-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,6 +92,14 @@ nav .top .top-right ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+nav .top .top-right ul li {
+  /* 搜索图标 */
+  /* 通知图标 */
+  /* 订阅图标 */
+  /* 推荐图标 */
+  /* 头像图标 */
+  /* 巴哈姆特图标 */
 }
 nav .top .top-right ul li:nth-child(1) {
   background-image: url("../img/nav/search-icon.svg");
@@ -136,11 +153,16 @@ nav .bottom .container {
   display: flex;
   height: 100%;
   position: relative;
+  /* 主菜单 */
+  /* 深色模式切换按钮 */
+  /* 屏幕宽度低把主菜单隐藏替换成菜单图标 */
 }
 nav .bottom .container .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* 菜单选项 */
+  /* 付费方案 */
 }
 nav .bottom .container .main-menu li {
   margin-right: 15px;
@@ -169,9 +191,12 @@ nav .bottom .container .dark_swift_button {
   position: absolute;
   right: 0;
   top: 5px;
+  /* 容器 */
 }
 nav .bottom .container .dark_swift_button .oooo {
   position: relative;
+  /* 月亮图标 */
+  /* 太阳图标 */
 }
 nav .bottom .container .dark_swift_button .oooo .moon {
   background-image: url("../img/nav/pic_moon.svg");

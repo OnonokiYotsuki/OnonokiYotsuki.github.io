@@ -17,22 +17,26 @@ nav {
     background-color: #fff;
     z-index: 1000000;
 
+    /* 顶层 */
     .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 54px;
 
+        /* 顶层左边 */
         .top-left {
             display: flex;
             align-items: center;
 
+            /* LOGO */
             .logo {
                 img {
                     height: 37px;
                 }
             }
 
+            /* 搜索框 */
             .anime-search {
                 width: 310px;
                 position: relative;
@@ -73,12 +77,17 @@ nav {
             }
         }
 
+        /* 顶层有边 */
         .top-right {
+
+            /* 选单 */
             ul {
                 display: flex;
                 align-items: center;
 
                 li {
+
+                    /* 搜索图标 */
                     &:nth-child(1) {
                         background-image: url("../img/nav/search-icon.svg");
                         background-position: center;
@@ -87,18 +96,22 @@ nav {
                         width: 20px;
                     }
 
+                    /* 通知图标 */
                     &:nth-child(2) {
                         background-image: url("../img/nav/navicon_notification.svg");
                     }
 
+                    /* 订阅图标 */
                     &:nth-child(3) {
                         background-image: url("../img/nav/navicon_notification.svg");
                     }
 
+                    /* 推荐图标 */
                     &:nth-child(4) {
                         background-image: url("../img/nav/navicon_notification.svg");
                     }
 
+                    /* 头像图标 */
                     &:nth-child(5) {
                         background-image: url("../img/nav/none.gif");
                         background-position: center;
@@ -107,6 +120,7 @@ nav {
                         width: 35px;
                     }
 
+                    /* 巴哈姆特图标 */
                     &:nth-child(6) {
                         background-image: url("../img/nav/baha_s.png");
                         height: 35px;
@@ -133,6 +147,7 @@ nav {
         }
     }
 
+    /* 下层 */
     .bottom {
         height: 35px;
         background-color: rgba(0, 180, 216, 0.8);
@@ -142,9 +157,11 @@ nav {
             height: 100%;
             position: relative;
 
+            /* 主菜单 */
             .main-menu {
                 display: flex;
 
+                /* 菜单选项 */
                 li {
                     margin-right: 15px;
                     height: 100%;
@@ -160,11 +177,13 @@ nav {
                     color: #fff;
                 }
 
+                /* 付费方案 */
                 .active {
                     background-color: #e67600;
                 }
             }
 
+            /* 深色模式切换按钮 */
             .dark_swift_button {
                 width: 50px;
                 height: 25px;
@@ -176,9 +195,11 @@ nav {
                 right: 0;
                 top: 5px;
 
+                /* 容器 */
                 .oooo {
                     position: relative;
 
+                    /* 月亮图标 */
                     .moon {
                         background-image: url("../img/nav/pic_moon.svg");
                         background-size: 18px 18px;
@@ -188,6 +209,7 @@ nav {
                         height: 26px;
                     }
 
+                    /* 太阳图标 */
                     .sun {
                         position: absolute;
                         background-image: url("../img/nav/pic_sun.svg");
@@ -212,6 +234,7 @@ nav {
                 }
             }
 
+            /* 屏幕宽度低把主菜单隐藏替换成菜单图标 */
             .menu-icon {
                 display: none;
             }
