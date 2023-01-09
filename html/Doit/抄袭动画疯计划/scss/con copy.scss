@@ -1,0 +1,277 @@
+.newanime-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    .newanime-finalcard {
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+
+            .hole-f {
+                transform: translateY(-100%);
+            }
+        }
+
+        .hole-a {
+            background-color: #00b4d8;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+
+            .hole-f {
+                height: 100%;
+                transition: all 1s ease-in-out;
+                color: #fff;
+
+                p {
+                    color: #fff;
+                }
+
+                .final-card-lastWords {
+                    height: 100%;
+                    padding: 10px;
+                }
+
+                .final-card {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .newanime-content {
+        padding: 10px 8px 0px 8px;
+        animation: fadeInAnimation ease 1s;
+
+        .newanime-card {
+            width: 100%;
+            position: relative;
+            font-size: 0.8em;
+            box-shadow: 0 0 6px 1px rgb(0 0 0 / 10%);
+            border-radius: 8px;
+
+            &:hover .newanime-card-img {
+                transform: scale(1.1);
+            }
+
+            .newanime-card-pic {
+                overflow: hidden;
+                border-radius: 8px 8px 0 0;
+
+                p {
+                    color: #fff;
+                }
+
+                .newanime-card-img {
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    z-index: -1;
+                    max-width: 100%;
+                    max-height: 100%;
+                    transition: transform 0.5s;
+
+                    &:after {
+                        content: "";
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        padding-bottom: 56.25%;
+                    }
+                }
+
+                .newanime-card-time {
+                    display: flex;
+                    position: absolute;
+                    background-color: #2a2c2c;
+                    border-radius: 4px;
+                    padding: 3px;
+                    left: 10px;
+                    top: 5px;
+                    z-index: 1;
+
+                    img {
+                        content: url("../img/content/pic-clock.svg");
+                        width: 16px;
+                    }
+                }
+
+                .newanime-card-suki {
+                    position: absolute;
+                    background: url("../img/content/like_default.svg");
+                    height: 40px;
+                    width: 40px;
+                    right: 5px;
+                    z-index: 1;
+                }
+
+                .newanime-card-sukied {
+                    background: url("../img/content/like_active.svg");
+                }
+
+                .newanime-card-episode {
+                    display: flex;
+                    position: absolute;
+                    bottom: 35px;
+                    left: 10px;
+
+                    img {
+                        content: url("../img/content/pic-tv.svg");
+                        width: 12px;
+                    }
+                }
+            }
+
+            .newanime-card-name {
+                display: flex;
+                width: 100%;
+                background-color: #fff;
+                justify-content: space-between;
+                border-radius: 0 0 8px 8px;
+
+                .newanime-name {
+                    height: 15px;
+                    padding: 3px;
+                    padding-left: 10px;
+                    flex: 1;
+                    overflow: hidden;
+                    border-radius: 0 0 8px 8px;
+
+                    p {
+                        white-space: nowrap;
+                        transition: transform 2s;
+
+                        &:hover {
+                            transform: translateX(-100%);
+                        }
+                    }
+                }
+
+                .newanime-watch img {
+                    content: url("../img/content/pic-fire.svg");
+                    width: 12px;
+                }
+
+                .newanime-watch {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+}
+
+.showMoreBtn {
+    margin: auto;
+    cursor: pointer;
+    background-color: #00b4d8;
+    box-shadow: 4px 0px 10px 3px rgba(150, 150, 150, 0.1);
+    max-width: 400px;
+    width: calc(100% - 16px);
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2.5;
+    font-size: 1.2rem;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #59d3eb;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 响应式 */
+@media screen and (min-width: 1300px) {
+    .newanime-content {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .hot-anime-card {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .newanime-content {
+        width: 20%;
+    }
+
+    .hot-anime-card {
+        width: 20%;
+    }
+
+    .news-card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .news-card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newanime-content {
+        width: 30%;
+    }
+
+    .hot-anime-card {
+        width: 30%;
+    }
+
+    .news-card {
+        width: 30%;
+    }
+
+    .news-card {
+        width: calc(100% - 16px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .newanime-content {
+        width: 45%;
+    }
+
+    .hot-anime-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .newanime-content {
+        width: 80%;
+    }
+
+    .hot-anime-card {
+        width: 70%;
+    }
+
+    .news-card {
+        width: 70%;
+    }
+}
