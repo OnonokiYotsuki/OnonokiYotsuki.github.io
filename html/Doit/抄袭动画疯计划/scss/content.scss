@@ -1,5 +1,5 @@
 $color_1: #2e2f31;
-$color_2: rgba(46, 47, 49, 0.6);
+$color_2: var(--text-secondary-color);
 $color_3: #fff;
 $color_4: #00b4d8;
 $color_5: #e67600;
@@ -24,7 +24,6 @@ $background-color_9: #eaeff0;
         opacity: 1;
     }
 }
-
 
 body {
     background-color: $background-color_1;
@@ -618,11 +617,6 @@ body {
     font-size: 1.4rem;
     margin-bottom: 30px;
 }
-
-* {
-    text-decoration: none;
-}
-
 
 /* 响应式布局 */
 @media screen and(min-width: 1300px) {

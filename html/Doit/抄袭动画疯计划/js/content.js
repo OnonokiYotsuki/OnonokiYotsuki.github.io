@@ -5,14 +5,14 @@ $(document).ready(function () {
             $('.anime-menu .bbb').css('left', '80px')
             $('.anime-menu .bbb').css('width', '70px')
             $('.switcher p:nth-child(2)').css('color', '#2e2f31');
-            $('.switcher p:nth-child(1)').css('color', 'rgba(46, 47, 49, 0.6)');
+            $('.switcher p:nth-child(1)').css('color', 'var(--text-secondary-color)');
             $('.program-list-bblock').show();
             $('.newanime-block').hide();
             $('.showMoreBtn').hide();
         } else {
             $('.anime-menu .bbb').css('left', '-9px')
             $('.anime-menu .bbb').css('width', '90px')
-            $('.switcher p:nth-child(2)').css('color', 'rgba(46, 47, 49, 0.6)');
+            $('.switcher p:nth-child(2)').css('color', 'var(--text-secondary-color)');
             $('.switcher p:nth-child(1)').css('color', '#2e2f31');
             $('.program-list-bblock').hide();
             $('.newanime-block').show();
