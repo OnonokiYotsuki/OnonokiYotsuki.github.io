@@ -1,9 +1,10 @@
 window.onload = function () {
     setTimeout(getpre, 1000);
     timer = setInterval(getpre, 3000);
-    var pics = new Array();
-    var dots = new Array();
+    var pics = [];
+    var dots = [];
     var banner = document.getElementById('banner');
+
     /* 创建五个图添加到div.banner */
     for (var i = 1; i <= 5; i++) {
         var lbli = document.createElement('li');
@@ -25,12 +26,14 @@ window.onload = function () {
         lbimg.onmouseleave = function () {
             timer = setInterval(getpre, 3000);
         }
+
         /* 为图片添加指示灯 */
         var bottomdot = document.createElement("div");
         bottomdot.style.left = 140 * (i + 1) + "px";
         bottomdot.name = i;
         dots.push(bottomdot);
         banner.appendChild(bottomdot);
+
         /* 为图片设置id 2 3 4 5 1*/
         if (i > 3) {
             lbli.id = i - 3;
@@ -53,7 +56,7 @@ window.onload = function () {
     pics[len].style.opacity = 0.5;
 
 
-
+    /* 前进 */
     function getnext() {
         /* 将最后一个图移动数组的第一个位置 */
         var give_up = pics[len];
@@ -85,6 +88,7 @@ window.onload = function () {
         }
     }
 
+    /* 后退 */
     function getpre() {
         var give_up = pics[0];
         pics.push(give_up);
