@@ -1,3 +1,14 @@
+$color_1: #2e2f31;
+$color_2: #fff;
+$background-color_1: #fff;
+$background-color_2: #f2f2f7;
+$background-color_3: rgba(0, 180, 216, 0.8);
+$background-color_4: #59d3eb;
+$background-color_5: #e67600;
+$background-color_6: #ffffff;
+$background-color_7: #d1d1d1;
+$background-color_8: rgba(0, 180, 216, 0.9);
+
 * {
     margin: 0;
     padding: 0;
@@ -10,20 +21,16 @@
     margin-left: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 // 导航栏 
 nav {
     height: 90px;
     position: fixed;
     background-color: $background-color_1;
     z-index: 1000000;
-
-    a {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-    }
 
     // 顶层 
     .top {
@@ -34,11 +41,7 @@ nav {
 
         // 顶层左边 
         .top-left {
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
             align-items: center;
 
             // LOGO 
@@ -70,7 +73,6 @@ nav {
                     }
 
                     .anime-search-icon {
-                        -webkit-box-sizing: border-box;
                         box-sizing: border-box;
                         position: absolute;
                         top: 0px;
@@ -95,16 +97,13 @@ nav {
 
             // 选单 
             ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
 
+                //各个选项
                 li {
 
-                    // 搜索图标 
+                    // 搜索图标
                     &:nth-child(1) {
                         background-image: url("../img/nav/search-icon.svg");
                         background-position: center;
@@ -118,7 +117,7 @@ nav {
                         background-image: url("../img/nav/navicon_notification.svg");
                     }
 
-                    // 订阅图标 
+                    // 订阅图标
                     &:nth-child(3) {
                         background-image: url("../img/nav/navicon_notification.svg");
                     }
@@ -163,108 +162,106 @@ nav {
             }
         }
     }
-}
 
-// 下层 
-.bottom {
-    height: 35px;
-    background-color: $background-color_3;
+    // 下层 
+    .bottom {
+        height: 35px;
+        background-color: $background-color_3;
 
-    .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        height: 100%;
-        position: relative;
-
-        // 主菜单 
-        .main-menu {
-            display: -webkit-box;
-            display: -ms-flexbox;
+        //主菜单容器
+        .container {
             display: flex;
+            height: 100%;
+            position: relative;
 
-            // 菜单选项
-            li {
-                margin-right: 15px;
-                height: 100%;
-                line-height: 35px;
-                padding: 0 10px;
+            // 主菜单 
+            .main-menu {
+                display: flex;
 
-                &:hover {
-                    background-color: $background-color_4;
+                // 菜单选项
+                li {
+                    margin-right: 15px;
+                    height: 100%;
+                    line-height: 35px;
+                    padding: 0 10px;
+
+                    &:hover {
+                        background-color: $background-color_4;
+                    }
+                }
+
+                a {
+                    color: $color_2;
+                }
+
+                // 付费方案
+                .active {
+                    background-color: $background-color_5;
                 }
             }
 
-            a {
-                color: $color_2;
-            }
-
-            // 付费方案 
-            .active {
-                background-color: $background-color_5;
-            }
-        }
-
-        // 屏幕宽度低把主菜单隐藏替换成菜单图标 
-        .menu-icon {
-            display: none;
-        }
-
-    }
-
-    // 深色模式切换按钮 
-    .dark_swift_button {
-        width: 50px;
-        height: 25px;
-        background-color: $background-color_6;
-        border-radius: 100px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        cursor: pointer;
-        position: absolute;
-        right: 0;
-        top: 5px;
-
-        // 容器 
-        .oooo {
-            position: relative;
-
-            // 月亮图标 
-            .moon {
-                background-image: url("../img/nav/pic_moon.svg");
-                background-size: 18px 18px;
-                background-repeat: no-repeat;
-                background-position: 2px;
-                width: 52px;
-                height: 26px;
-            }
-
-            // 太阳图标
-            .sun {
+            // 深色模式切换按钮
+            .dark_swift_button {
+                width: 50px;
+                height: 25px;
+                background-color: $background-color_6;
+                border-radius: 100px;
+                display: flex;
+                cursor: pointer;
                 position: absolute;
-                background-image: url("../img/nav/pic_sun.svg");
-                background-size: 18px 18px;
-                background-repeat: no-repeat;
-                background-position: 28px;
-                width: 52px;
-                height: 26px;
-                top: 0;
-            }
+                right: 0;
+                top: 5px;
 
-            .radio {
-                position: absolute;
-                background-color: $background-color_7;
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                top: 4px;
-                left: 4px;
-                -webkit-transition: all 0.5s ease 0s;
-                transition: all 0.5s ease 0s;
+                // 容器 
+                .oooo {
+                    position: relative;
+
+                    // 月亮图标
+                    .moon {
+                        background-image: url("../img/nav/pic_moon.svg");
+                        background-size: 18px 18px;
+                        background-repeat: no-repeat;
+                        background-position: 2px;
+                        width: 52px;
+                        height: 26px;
+                    }
+
+                    // 太阳图标
+                    .sun {
+                        position: absolute;
+                        background-image: url("../img/nav/pic_sun.svg");
+                        background-size: 18px 18px;
+                        background-repeat: no-repeat;
+                        background-position: 28px;
+                        width: 52px;
+                        height: 26px;
+                        top: 0;
+                    }
+
+                    //纽
+                    .radio {
+                        position: absolute;
+                        background-color: $background-color_7;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        top: 4px;
+                        left: 4px;
+                        transition: all 0.5s ease 0s;
+                    }
+                }
             }
         }
     }
+
+    ul {
+        list-style: none;
+    }
+}
+
+// 屏幕宽度低把主菜单隐藏替换成菜单图标 
+.menu-icon {
+    display: none;
 }
 
 // 海报 
@@ -274,51 +271,56 @@ nav {
     display: block;
 }
 
-
+//用于撑起nav position：fixed的空缺
 .nav-block {
     height: 90px;
     width: 100%;
 }
 
-/* 响应式 */
+//响应式
 @media (min-width: 1200px) {
     .container {
         max-width: 1600px;
     }
 }
 
+//搜索框改成搜索图标
 @media (max-width: 615px) {
-    .top-right {
-        ul {
-            li {
-                &:nth-child(1) {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
+
+    //搜索图标显示
+    nav {
+        .top {
+            .top-right {
+                ul {
+                    li {
+                        &:nth-child(1) {
+                            display: flex;
+                        }
+                    }
                 }
             }
         }
     }
 
+    //搜索框消失
     .anime-search {
         display: none;
     }
 }
 
+//把主菜单改为竖列（方便手机使用查看）
 @media (max-width: 810px) {
+
+    //主菜单改为可点击指针
     .bottom {
         cursor: pointer;
     }
 
+    //更改菜单样式
     .main-menu {
         top: 35px;
         position: absolute;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
         width: 100%;
         display: none;
@@ -331,13 +333,10 @@ nav {
         }
     }
 
+    //显示主菜单图标
     .menu-icon {
         height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
     }
 }
